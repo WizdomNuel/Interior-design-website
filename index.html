@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <title>Luxe Interiors | Awka</title>
+    <title>FDD | Awka</title>
     
     <!-- Google Fonts: Playfair Display for headings, Lato for body -->
     <!-- Note: Sohne and Graphik are premium fonts. Consider licensing from Grilli Type or using alternatives -->
@@ -111,6 +111,24 @@
         background: var(--accent-primary);
         color: var(--text-primary);
       }
+
+      /* Preload overlay to prevent flash before loading screen */
+      #app-preload {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 9998;
+        background-color: var(--bg-primary);
+        transition: opacity 0.4s ease;
+        opacity: 1;
+      }
+
+      #app-preload.hidden {
+        pointer-events: none;
+        opacity: 0;
+      }
     </style>
   <script type="importmap">
 {
@@ -127,7 +145,19 @@
 <link rel="stylesheet" href="/index.css">
 </head>
   <body>
+    <div id="app-preload"></div>
     <div id="root"></div>
+    <script>
+      // Initialize preload immediately
+      try {
+        const preload = document.getElementById('app-preload');
+        if (preload) {
+          preload.style.backgroundColor = 'var(--bg-primary)';
+        }
+      } catch (e) {
+        // ignore
+      }
+    </script>
     <script type="module" src="/index.tsx"></script>
   </body>
 </html>

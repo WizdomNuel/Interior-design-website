@@ -58,7 +58,7 @@ const Navbar: React.FC = () => {
     >
       <div className="hidden md:flex container mx-auto px-6 flex justify-between items-center">
         <NavLink to="/" className="transition-colors duration-300" end>
-          <img src={logoImg} alt="FDD Logo" className="h-10 w-auto" style={{ filter: 'brightness(0) saturate(100%)' }} />
+          <img src={logoImg} alt="FDD Logo" className="h-10 w-auto" />
         </NavLink>
 
         {/* Desktop Menu */}
@@ -111,7 +111,7 @@ const Navbar: React.FC = () => {
       {/* Mobile top header with logo and toggle */}
       <div className="md:hidden flex items-center justify-between px-6 py-4" style={{ backgroundColor: 'var(--bg-primary)' }}>
         <NavLink to="/" className="transition-colors duration-300" end>
-          <img src={logoImg} alt="FDD Logo" className="h-8 w-auto" style={{ filter: 'brightness(0) saturate(100%)' }} />
+          <img src={logoImg} alt="FDD Logo" className="h-8 w-auto" />
         </NavLink>
         <motion.button
           onClick={() => setTheme((t) => (t === 'dark' ? 'light' : 'dark'))}
