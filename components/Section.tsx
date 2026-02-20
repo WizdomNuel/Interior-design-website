@@ -7,11 +7,11 @@ interface SectionProps {
   bgColor?: 'white' | 'offwhite' | 'dark';
 }
 
-const Section: React.FC<SectionProps> = ({ id, children, className = '', bgColor = 'offwhite' }) => {
+const Section: React.FC<SectionProps> = ({ id, children, className = '', bgColor = 'dark' }) => {
   const bgClasses = {
-    white: 'bg-white',
-    offwhite: 'bg-stone-50',
-    dark: 'bg-stone-900 text-stone-100',
+    white: 'bg-white text-fdd-light-text-primary',
+    offwhite: 'bg-white text-fdd-light-text-primary',
+    dark: 'bg-fdd-dark-bg text-fdd-dark-text-primary',
   };
 
   return (

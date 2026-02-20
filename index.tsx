@@ -8,8 +8,6 @@ try {
   const saved = localStorage.getItem('theme');
   if (saved === 'light') {
     document.documentElement.classList.remove('dark');
-  } else if (saved === 'dark') {
-    document.documentElement.classList.add('dark');
   } else {
     // default to dark
     document.documentElement.classList.add('dark');

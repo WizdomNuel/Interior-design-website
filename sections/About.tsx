@@ -11,7 +11,7 @@ const About: React.FC = () => {
   ];
 
   return (
-    <Section id="about" bgColor="white" className="overflow-hidden">
+    <Section id="about" bgColor="dark" className="overflow-hidden">
       <div className="container px-6">
         
         {/* Intro Block */}
@@ -22,10 +22,10 @@ const About: React.FC = () => {
              whileInView={{ opacity: 1 }}
              viewport={{ once: true }}
           >
-            <span className="text-stone-500 text-xs font-bold tracking-[0.2em] uppercase mb-6 block">Since 2018</span>
-            <h2 className="font-serif text-5xl md:text-6xl text-stone-900 mb-8 leading-[1.1]">
+            <span className="text-fdd-dark-text-secondary text-xs font-bold tracking-[0.2em] uppercase mb-6 block">Since 2018</span>
+            <h2 className="font-serif text-5xl md:text-6xl text-fdd-dark-text-primary mb-8 leading-[1.1]">
               Rooted in Awka,<br/> 
-              Inspired by <span className="italic text-stone-500">Global Luxury.</span>
+              Inspired by <span className="italic text-fdd-accent-primary">Global Luxury.</span>
             </h2>
           </motion.div>
           
@@ -36,30 +36,30 @@ const About: React.FC = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
           >
-            <p className="text-stone-600 font-light text-lg leading-relaxed mb-6">
-              Luxe Interiors was born from a desire to bring world-class interior design standards to Southeast Nigeria. 
+            <p className="text-fdd-dark-text-secondary font-light text-lg leading-relaxed mb-6">
+              FDD was born from a desire to bring world-class interior design standards to Southeast Nigeria. 
               We noticed a gap between generic finishing and true spatial artistry.
             </p>
-            <p className="text-stone-600 font-light text-lg leading-relaxed">
+            <p className="text-fdd-dark-text-secondary font-light text-lg leading-relaxed">
               Today, we are a multidisciplinary team of designers, architects, and project managers dedicated to 
-              transforming the way people live and work in Anambra State. We don't just decorate; we curate lifestyles.
+              transforming the way people live and work. We don't just decorate; we curate lifestyles.
             </p>
           </motion.div>
         </div>
 
         {/* Founder Profile / Team Section */}
         <div className="relative mb-32">
-           <div className="bg-stone-50 w-full md:w-3/4 ml-auto p-12 md:p-24 relative z-0">
+           <div className="bg-fdd-dark-surface w-full md:w-3/4 ml-auto p-12 md:p-24 relative z-0">
               <div className="md:w-2/3 ml-auto">
-                <h3 className="font-serif text-3xl text-stone-900 mb-6">Meet the Principal</h3>
-                <p className="text-stone-600 font-light leading-relaxed mb-8 italic text-lg">
+                <h3 className="font-serif text-3xl text-fdd-dark-text-primary mb-6">Meet the Principal</h3>
+                <p className="text-fdd-dark-text-secondary font-light leading-relaxed mb-8 italic text-lg">
                   "I believe that true luxury is not about the price tag of the furniture, but about the feeling of ease, elegance, and peace that a well-designed space provides."
                 </p>
                 <div className="flex items-center gap-4">
-                   <div className="h-[1px] w-12 bg-stone-900"></div>
+                   <div className="h-[1px] w-12 bg-fdd-accent-primary"></div>
                    <div>
-                     <span className="block font-bold text-stone-900 uppercase tracking-widest text-sm">Chidimma Nwosu</span>
-                     <span className="block text-stone-500 text-xs mt-1">Lead Interior Designer</span>
+                     <span className="block font-bold text-fdd-dark-text-primary uppercase tracking-widest text-sm">Chidimma Nwosu</span>
+                     <span className="block text-fdd-dark-text-secondary text-xs mt-1">Lead Interior Designer</span>
                    </div>
                 </div>
               </div>

@@ -45,15 +45,19 @@ const Navbar: React.FC = () => {
 
   return (
     <nav 
-      className={`md:fixed md:top-0 md:left-0 md:right-0 z-50 transition-all duration-500 ease-out ${
+      className={`md:fixed md:top-0 md:left-0 md:right-0 z-50 transition-all duration-500 ease-out md:backdrop-blur-md ${
         isScrolled 
-          ? 'md:bg-white/80 md:backdrop-blur-md md:border-b md:border-stone-100 md:py-4' 
-          : 'md:bg-transparent md:py-8 md:border-b md:border-white/10'
+          ? 'md:py-4 md:border-b md:border-opacity-20' 
+          : 'md:py-8 md:border-b md:border-opacity-10'
       }`}
+      style={{
+        backgroundColor: isScrolled ? 'var(--bg-primary)' : 'transparent',
+        borderColor: 'var(--accent-primary)',
+      }}
     >
       <div className="hidden md:flex container mx-auto px-6 flex justify-between items-center">
-        <NavLink to="/" className={({isActive}) => `font-serif text-2xl tracking-[0.15em] font-bold transition-colors duration-300 ${isScrolled ? 'text-stone-900' : 'text-white'} ${isActive ? 'opacity-90' : ''}`} end>
-          LUXE
+        <NavLink to="/" className={`font-serif text-2xl tracking-[0.15em] font-bold transition-colors duration-300 opacity-90`} style={{ color: 'var(--accent-primary)' }} end>
+          FDD
         </NavLink>
 
         {/* Desktop Menu */}
@@ -62,17 +66,26 @@ const Navbar: React.FC = () => {
             <NavLink 
               key={link.name} 
               to={link.href} 
-              className={({ isActive }) => `text-xs font-bold uppercase tracking-[0.15em] transition-all duration-300 hover:opacity-100 opacity-80 relative group ${isScrolled ? 'text-stone-900' : 'text-white'} ${isActive ? 'underline decoration-2 underline-offset-4' : ''}`}
+              className={({ isActive }) => `text-xs font-bold uppercase tracking-[0.15em] transition-all duration-300 hover:opacity-100 opacity-80 relative group ${isActive ? 'opacity-100' : ''}`}
+              style={({ isActive }) => ({
+                color: isActive ? 'var(--accent-primary)' : 'var(--text-secondary)',
+              })}
             >
               {link.name}
-              <span className={`absolute -bottom-2 left-0 w-0 h-[1px] transition-all duration-300 group-hover:w-full ${
-                isScrolled ? 'bg-stone-900' : 'bg-white'
-              }`}></span>
+              <span 
+                className={`absolute -bottom-2 left-0 w-0 h-[1px] transition-all duration-300 group-hover:w-full`}
+                style={{ backgroundColor: 'var(--accent-primary)' }}
+              ></span>
             </NavLink>
           ))}
           <NavLink 
             to="/contact" 
-            className={({ isActive }) => `px-6 py-3 text-xs font-bold uppercase tracking-[0.15em] transition-all duration-300 border ${isScrolled ? 'border-stone-900 text-stone-900 hover:bg-stone-900 hover:text-white' : 'border-white text-white hover:bg-white hover:text-stone-900'} ${isActive ? 'bg-stone-900 text-white' : ''}`}
+            className={({ isActive }) => `px-6 py-3 text-xs font-bold uppercase tracking-[0.15em] transition-all duration-300 border ${isActive ? '' : ''}`}
+            style={({ isActive }) => ({
+              borderColor: 'var(--accent-primary)',
+              color: 'var(--accent-primary)',
+              backgroundColor: isActive ? 'var(--accent-primary)' : 'transparent',
+            })}
           >
             Inquire
           </NavLink>
@@ -83,7 +96,8 @@ const Navbar: React.FC = () => {
             whileHover={{ scale: 1.08 }}
             whileTap={{ scale: 0.95 }}
             aria-label="Toggle theme"
-            className={`ml-2 p-2 rounded transition-colors ${isScrolled ? 'text-stone-900' : 'text-white'}`}
+            className={`ml-2 p-2 rounded transition-colors`}
+            style={{ color: 'var(--accent-primary)' }}
             title="Toggle theme"
           >
             {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
@@ -95,7 +109,13 @@ const Navbar: React.FC = () => {
 
       {/* Mobile bottom nav */}
       <div className="md:hidden fixed left-0 right-0 bottom-0 z-50" style={{ paddingBottom: 'env(safe-area-inset-bottom, 0)' }}>
-        <div className="bg-stone-900/95 backdrop-blur w-full flex justify-around items-center px-4 py-3">
+        <div 
+          className="backdrop-blur w-full flex justify-around items-center px-4 py-3 border-t border-opacity-20"
+          style={{
+            backgroundColor: 'var(--bg-primary)',
+            borderColor: 'var(--accent-primary)',
+          }}
+        >
           {navLinks.map((link) => {
             const Icon = (
               link.name === 'Home' ? Home : link.name === 'About' ? User : link.name === 'Services' ? Layers : link.name === 'Portfolio' ? Briefcase : Mail
@@ -104,7 +124,10 @@ const Navbar: React.FC = () => {
               <NavLink
                 key={link.name}
                 to={link.href}
-                className={({ isActive }) => `flex-1 flex flex-col items-center justify-center text-xs text-stone-200/90 py-1 transition-colors ${isActive ? 'text-white' : 'text-stone-300'}`}
+                className={({ isActive }) => `flex-1 flex flex-col items-center justify-center text-xs py-1 transition-colors`}
+                style={({ isActive }) => ({
+                  color: isActive ? 'var(--accent-primary)' : 'var(--text-secondary)',
+                })}
                 aria-label={link.name}
               >
                 <Icon size={20} />

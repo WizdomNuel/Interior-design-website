@@ -6,6 +6,8 @@
     <title>Luxe Interiors | Awka</title>
     
     <!-- Google Fonts: Playfair Display for headings, Lato for body -->
+    <!-- Note: Sohne and Graphik are premium fonts. Consider licensing from Grilli Type or using alternatives -->
+    <!-- For now using Playfair Display (serif) for big headings and Lato (sans) for body text -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -18,10 +20,27 @@
         theme: {
           extend: {
             colors: {
-              primary: '#292524', // Stone 800
-              secondary: '#57534e', // Stone 600
-              accent: '#d6cbb2', // Muted Gold/Beige
-              offwhite: '#fafaf9', // Stone 50
+              // FDD Brand System - Dark Mode Primary
+              'fdd-dark-bg': '#1b1b1b',
+              'fdd-dark-surface': '#232323',
+              'fdd-dark-text-primary': '#FFFFFF',
+              'fdd-dark-text-secondary': '#BDBDBD',
+              
+              // FDD Brand System - Orange Accents
+              'fdd-accent-primary': '#fac344',
+              'fdd-accent-secondary': '#ac7227',
+              
+              // FDD Brand System - Light Mode
+              'fdd-light-bg': '#FFFFFF',
+              'fdd-light-surface': '#e2e2e2',
+              'fdd-light-text-primary': '#1b1b1b',
+              'fdd-light-text-secondary': '#6E6E6E',
+              
+              // Legacy colors for backward compatibility
+              primary: '#292524',
+              secondary: '#57534e',
+              accent: '#d6cbb2',
+              offwhite: '#fafaf9',
               surface: '#ffffff',
             },
             fontFamily: {
@@ -43,31 +62,54 @@
       }
     </script>
     <style>
+      /* FDD Design Tokens - CSS Variables */
+      :root,
+      :not(.dark) {
+        /* Light Mode (Default) */
+        --bg-primary: #FFFFFF;
+        --bg-secondary: #e2e2e2;
+        --text-primary: #1b1b1b;
+        --text-secondary: #6E6E6E;
+        --accent-primary: #ac7227;
+        --accent-secondary: #fac344;
+      }
+
+      /* Dark Mode */
+      .dark {
+        --bg-primary: #1b1b1b;
+        --bg-secondary: #232323;
+        --text-primary: #FFFFFF;
+        --text-secondary: #BDBDBD;
+        --accent-primary: #fac344;
+        --accent-secondary: #ac7227;
+      }
+
       /* Smooth scrolling for anchor links */
       html {
         scroll-behavior: smooth;
       }
       body {
-        background-color: #0b0b0b;
-        color: #f7f7f7;
+        background-color: var(--bg-primary);
+        color: var(--text-primary);
+        transition: background-color 0.3s ease, color 0.3s ease;
       }
       /* Custom Scrollbar for Premium Feel */
       ::-webkit-scrollbar {
         width: 10px;
       }
       ::-webkit-scrollbar-track {
-        background: #fafaf9;
+        background: var(--bg-secondary);
       }
       ::-webkit-scrollbar-thumb {
-        background: #e7e5e4;
+        background: var(--accent-primary);
         border-radius: 0;
       }
       ::-webkit-scrollbar-thumb:hover {
-        background: #a8a29e;
+        background: var(--accent-secondary);
       }
       ::selection {
-        background: #f7f7f7;
-        color: #0b0b0b;
+        background: var(--accent-primary);
+        color: var(--text-primary);
       }
     </style>
   <script type="importmap">

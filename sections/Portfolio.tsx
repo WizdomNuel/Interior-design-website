@@ -154,13 +154,13 @@ const Portfolio: React.FC = () => {
   };
 
   return (
-    <Section id="portfolio" bgColor="white">
+    <Section id="portfolio" bgColor="dark">
       <div className="container px-6">
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
           <div className="max-w-lg">
-            <span className="text-stone-500 text-xs font-bold tracking-[0.2em] uppercase mb-4 block">Our Work</span>
-            <h2 className="font-serif text-4xl text-stone-900 mb-6">Selected Projects</h2>
-            <p className="text-stone-500 font-light text-sm leading-relaxed">
+            <span className="text-fdd-dark-text-secondary text-xs font-bold tracking-[0.2em] uppercase mb-4 block">Our Work</span>
+            <h2 className="font-serif text-4xl text-fdd-dark-text-primary mb-6">Selected Projects</h2>
+            <p className="text-fdd-dark-text-secondary font-light text-sm leading-relaxed">
               A collection of spaces transformed through our vision. From private residences to corporate headquarters.
             </p>
           </div>
@@ -171,10 +171,10 @@ const Portfolio: React.FC = () => {
                onClick={() => setIsModalOpen(true)}
                className="flex items-center gap-3 text-xs uppercase tracking-[0.15em]"
              >
-               <Wand2 size={14} className="text-stone-400" />
+               <Wand2 size={14} className="text-fdd-dark-text-secondary" />
                <span>AI Studio</span>
              </Button>
-            <Button variant="text" className="flex items-center gap-3 text-stone-900 border-b border-stone-900 pb-1 text-xs uppercase tracking-[0.15em]">
+            <Button variant="text" className="flex items-center gap-3 text-fdd-accent-primary border-b border-fdd-accent-primary pb-1 text-xs uppercase tracking-[0.15em]">
               Full Gallery <ArrowRight size={14} />
             </Button>
           </div>
@@ -190,7 +190,7 @@ const Portfolio: React.FC = () => {
               whileTap={{ scale: 0.99 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.06 }}
-              className="break-inside-avoid relative group overflow-hidden bg-stone-100 shadow-sm hover:shadow-xl"
+              className="break-inside-avoid relative group overflow-hidden bg-fdd-dark-surface shadow-sm hover:shadow-xl"
             >
               <img 
                 src={item.src} 

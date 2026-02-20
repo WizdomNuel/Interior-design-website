@@ -16,7 +16,14 @@ function App() {
   const location = useLocation();
 
   return (
-    <div className="bg-stone-50 min-h-screen text-stone-900 font-sans selection:bg-stone-900 selection:text-white">
+    <div 
+      className="min-h-screen font-sans"
+      style={{
+        backgroundColor: 'var(--bg-primary)',
+        color: 'var(--text-primary)',
+        transition: 'background-color 0.3s ease, color 0.3s ease',
+      }}
+    >
       <Navbar />
       <main id="main" role="main">
         <AnimatePresence mode="wait">
@@ -28,7 +35,7 @@ function App() {
             variants={pageVariants}
           >
             <Suspense fallback={<div className="py-20 text-center">Loading...</div>}>
-              <Routes location={location} key={location.pathname}>
+              <Routes location={location}>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/services" element={<ServicesPage />} />
