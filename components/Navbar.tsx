@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Sun, Moon, Home, User, Layers, Briefcase, Mail } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { NavLink } from 'react-router-dom';
+import logoImg from '../assets/FDD logo.png';
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -56,8 +57,8 @@ const Navbar: React.FC = () => {
       }}
     >
       <div className="hidden md:flex container mx-auto px-6 flex justify-between items-center">
-        <NavLink to="/" className={`font-serif text-2xl tracking-[0.15em] font-bold transition-colors duration-300 opacity-90`} style={{ color: 'var(--accent-primary)' }} end>
-          FDD
+        <NavLink to="/" className="transition-colors duration-300" end>
+          <img src={logoImg} alt="FDD Logo" className="h-10 w-auto" style={{ filter: 'brightness(0) saturate(100%)' }} />
         </NavLink>
 
         {/* Desktop Menu */}
@@ -107,7 +108,25 @@ const Navbar: React.FC = () => {
         {/* Mobile: bottom nav handled separately for app-like feel */}
       </div>
 
-      {/* Mobile bottom nav */}
+      {/* Mobile top header with logo and toggle */}
+      <div className="md:hidden flex items-center justify-between px-6 py-4" style={{ backgroundColor: 'var(--bg-primary)' }}>
+        <NavLink to="/" className="transition-colors duration-300" end>
+          <img src={logoImg} alt="FDD Logo" className="h-8 w-auto" style={{ filter: 'brightness(0) saturate(100%)' }} />
+        </NavLink>
+        <motion.button
+          onClick={() => setTheme((t) => (t === 'dark' ? 'light' : 'dark'))}
+          whileHover={{ scale: 1.08 }}
+          whileTap={{ scale: 0.95 }}
+          aria-label="Toggle theme"
+          className={`p-2 rounded transition-colors`}
+          style={{ color: 'var(--accent-primary)' }}
+          title="Toggle theme"
+        >
+          {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
+        </motion.button>
+      </div>
+
+      {/* Mobile: bottom nav handled separately for app-like feel */}
       <div className="md:hidden fixed left-0 right-0 bottom-0 z-50" style={{ paddingBottom: 'env(safe-area-inset-bottom, 0)' }}>
         <div 
           className="backdrop-blur w-full flex justify-around items-center px-4 py-3 border-t border-opacity-20"

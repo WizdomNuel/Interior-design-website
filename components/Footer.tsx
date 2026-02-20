@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Instagram, Facebook, Twitter, Youtube } from 'lucide-react';
+import logoImg from '../assets/FDD logo.png';
 
 const Footer: React.FC = () => {
   return (
@@ -15,7 +16,10 @@ const Footer: React.FC = () => {
       <div className="container px-6">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0 text-center md:text-left">
-            <h3 className="font-serif text-2xl tracking-widest font-bold mb-2" style={{ color: 'var(--text-primary)' }}>FDD</h3>
+            <div className="flex items-center gap-3 justify-center md:justify-start mb-3">
+              <img src={logoImg} alt="FDD Logo" className="h-8 w-auto" style={{ filter: 'brightness(0) saturate(100%)' }} />
+              <h3 className="font-serif text-xl tracking-widest font-bold" style={{ color: 'var(--text-primary)' }}>FDD</h3>
+            </div>
             <p className="text-sm font-light opacity-70">Luxury Interior Design</p>
           </div>
           

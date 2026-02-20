@@ -1,6 +1,5 @@
-import React from 'react';
+/// <reference types="vite/client" />
 
-// Vite static assets type declarations
 declare module '*.png' {
   const content: string;
   export default content;
@@ -24,24 +23,4 @@ declare module '*.gif' {
 declare module '*.svg' {
   const content: string;
   export default content;
-}
-
-export interface ServiceItem {
-  id: string;
-  title: string;
-  description: string;
-  icon: React.ElementType;
-}
-
-export interface PortfolioItem {
-  id: string;
-  title: string;
-  category: string;
-  imageUrl: string;
-}
-
-export interface FeatureItem {
-  id: string;
-  title: string;
-  description: string;
 }
