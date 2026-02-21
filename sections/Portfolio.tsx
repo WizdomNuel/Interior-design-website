@@ -3,6 +3,12 @@ import Section from '../components/Section';
 import { motion } from 'framer-motion';
 import { X, ArrowRight } from 'lucide-react';
 import Button from '../components/Button';
+import serviceImage from '../assets/service.png';
+import service1Image from '../assets/service1.png';
+import service2Image from '../assets/service2.png';
+import service3Image from '../assets/service3.jpeg';
+import service4Image from '../assets/service4.jpeg';
+import service5Image from '../assets/service5.jpeg';
 
 interface Image {
   src: string;
@@ -12,12 +18,12 @@ interface Image {
 
 const Portfolio: React.FC = () => {
   const [images, setImages] = useState<Image[]>([
-    { src: "/assets/service.png", title: "Modern Living Room", description: "Contemporary design with clean lines and neutral colors" },
-    { src: "/assets/service1.png", title: "Luxury Kitchen", description: "High-end appliances and custom cabinetry" },
-    { src: "/assets/service2.png", title: "Elegant Bedroom", description: "Serene retreat with premium furnishings" },
-    { src: "/assets/service3.jpeg", title: "Sophisticated Bathroom", description: "Spa-like atmosphere with modern fixtures" },
-    { src: "/assets/service4.jpeg", title: "Home Office", description: "Functional workspace with ergonomic design" },
-    { src: "/assets/service5.jpeg", title: "Dining Room", description: "Elegant space for entertaining guests" }
+    { src: serviceImage, title: "Modern Living Room", description: "Contemporary design with clean lines and neutral colors" },
+    { src: service1Image, title: "Luxury Kitchen", description: "High-end appliances and custom cabinetry" },
+    { src: service2Image, title: "Elegant Bedroom", description: "Serene retreat with premium furnishings" },
+    { src: service3Image, title: "Sophisticated Bathroom", description: "Spa-like atmosphere with modern fixtures" },
+    { src: service4Image, title: "Home Office", description: "Functional workspace with ergonomic design" },
+    { src: service5Image, title: "Dining Room", description: "Elegant space for entertaining guests" }
   ]);
 
   const [selectedImage, setSelectedImage] = useState<Image | null>(null);
