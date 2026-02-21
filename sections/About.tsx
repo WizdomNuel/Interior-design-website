@@ -1,13 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import principalImg from '../assets/myimage.png';
+import principalImg from '../assets/img.jpeg';
 import Section from '../components/Section';
 
 const About: React.FC = () => {
   const values = [
-    { title: 'Authenticity', text: 'We believe your space should be a reflection of your identity, not just a catalog copy. Every design is bespoke.' },
-    { title: 'Craftsmanship', text: 'We collaborate with skilled local artisans in Anambra to create custom furniture and finishes that stand the test of time.' },
-    { title: 'Harmony', text: 'Our designs balance functionality with aesthetics, ensuring that beauty never compromises the livability of your home.' }
+    { title: 'Excellence Without Compromise', text: 'We approach every project with meticulous attention to detail, ensuring every finish, texture, and layout reflects refined craftsmanship.' },
+    { title: 'Intentional Design', text: 'Every space is designed with purpose — aligned with the client’s lifestyle, identity, and long-term vision.' },
+    { title: 'Integrity in Execution', text: 'Transparent processes, disciplined timelines, and responsible resource management define how we operate.' }
   ];
 
   return (
@@ -53,13 +53,15 @@ const About: React.FC = () => {
               <div className="md:w-2/3 ml-auto">
                 <h3 className="font-serif text-3xl text-fdd-dark-text-primary mb-6">Meet the Principal</h3>
                 <p className="text-fdd-dark-text-secondary font-light leading-relaxed mb-8 italic text-lg">
-                  "I believe that true luxury is not about the price tag of the furniture, but about the feeling of ease, elegance, and peace that a well-designed space provides."
+                  The vision for FDD was born in 2020 after Ms Frances attended a Kingdom Economic Summit at Love Ambassadors Ministries, Awka — a moment that became a personal calling to create refined, intentional spaces.
+
+                  With over five years managing her father’s export business (2012 - 2018) and later running her own cleaning agency, she built strong operational and client experience, also learnt a lot about marketing and bookkeeping before fully stepping into premium interior design.
                 </p>
                 <div className="flex items-center gap-4">
                    <div className="h-[1px] w-12 bg-fdd-accent-primary"></div>
                    <div>
-                     <span className="block font-bold text-fdd-dark-text-primary uppercase tracking-widest text-sm">Chidimma Nwosu</span>
-                     <span className="block text-fdd-dark-text-secondary text-xs mt-1">Lead Interior Designer</span>
+                     <span className="block font-bold text-fdd-dark-text-primary uppercase tracking-widest text-sm">Ms Frances</span>
+                     <span className="block text-fdd-dark-text-secondary text-xs mt-1">Founder & Principal Designer</span>
                    </div>
                 </div>
               </div>
@@ -102,9 +104,9 @@ const About: React.FC = () => {
                transition={{ delay: idx * 0.08, duration: 0.45 }}
                className="hover:shadow-lg"
              >
-                <span className="text-stone-300 text-5xl font-serif mb-6 block opacity-50">0{idx + 1}</span>
-                <h4 className="text-stone-900 font-bold uppercase tracking-widest text-sm mb-4">{item.title}</h4>
-                <p className="text-stone-500 font-light text-sm leading-relaxed pr-4">{item.text}</p>
+                <span className="text-fdd-dark-text-secondary text-5xl font-serif mb-6 block opacity-50">0{idx + 1}</span>
+                <h4 className="text-fdd-dark-text-primary font-serif font-bold text-xl mb-2 leading-tight">{item.title}</h4>
+                <p className="text-fdd-dark-text-secondary font-light text-sm leading-relaxed pr-4">{item.text}</p>
              </motion.div>
           ))}
         </div>
