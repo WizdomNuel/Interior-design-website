@@ -67,7 +67,7 @@ const Navbar: React.FC = () => {
             <NavLink 
               key={link.name} 
               to={link.href} 
-              className={({ isActive }) => `text-xs font-bold uppercase tracking-[0.15em] transition-all duration-300 hover:opacity-100 opacity-80 relative group ${isActive ? 'opacity-100' : ''}`}
+              className={({ isActive }) => `text-xs font-sohne font-bold uppercase tracking-[0.15em] transition-all duration-300 hover:opacity-100 opacity-80 relative group ${isActive ? 'opacity-100' : ''}`}
               style={({ isActive }) => ({
                 color: isActive ? 'var(--accent-primary)' : 'var(--text-secondary)',
               })}
@@ -81,7 +81,7 @@ const Navbar: React.FC = () => {
           ))}
           <NavLink 
             to="/contact" 
-            className={({ isActive }) => `px-6 py-3 text-xs font-bold uppercase tracking-[0.15em] transition-all duration-300 border ${isActive ? '' : ''}`}
+            className={({ isActive }) => `px-6 py-3 text-xs font-sohne font-bold uppercase tracking-[0.15em] transition-all duration-300 border ${isActive ? '' : ''}`}
             style={({ isActive }) => ({
               borderColor: 'var(--accent-primary)',
               color: 'var(--accent-primary)',
@@ -110,9 +110,10 @@ const Navbar: React.FC = () => {
 
       {/* Mobile top header with logo and toggle */}
       <div className="md:hidden flex items-center justify-between px-6 py-4" style={{ backgroundColor: 'var(--bg-primary)' }}>
-        <NavLink to="/" className="transition-colors duration-300" end>
+        <div className="flex items-center gap-3 justify-center md:justify-start mb-3">
           <img src={logoImg} alt="FDD Logo" className="h-12 w-auto" />
-        </NavLink>
+          <h3 className="font-sohne font-bold text-xl tracking-widest" style={{ color: 'var(--text-primary)' }}>FDD</h3>
+        </div>
         <motion.button
           onClick={() => setTheme((t) => (t === 'dark' ? 'light' : 'dark'))}
           whileHover={{ scale: 1.08 }}

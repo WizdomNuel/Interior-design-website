@@ -22,7 +22,9 @@ const Home: React.FC = () => {
       <motion.section variants={{ hidden: { opacity: 0, y: 12 }, show: { opacity: 1, y: 0, transition: { duration: 0.6, delay: 0.16 } } }}>
         <Portfolio />
       </motion.section>
-      <WhyChooseUs />
+      <motion.section variants={{ hidden: { opacity: 0, y: 12 }, show: { opacity: 1, y: 0, transition: { duration: 0.6, delay: 0.24 } } }}>
+        <WhyChooseUs />
+      </motion.section>
       <CallToAction />
       <Contact />
     </motion.div>

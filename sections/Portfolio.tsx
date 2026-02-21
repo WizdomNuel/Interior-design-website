@@ -38,10 +38,10 @@ const Portfolio: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-serif text-gray-900 mb-6">
+          <h2 className="font-sohne font-bold text-4xl md:text-5xl text-gray-900 mb-6">
             Our Portfolio
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+          <p className="text-xl font-graphik text-gray-600 max-w-3xl mx-auto mb-8">
             Explore our collection of meticulously designed spaces that blend functionality with aesthetic excellence.
           </p>
           <Button variant="text" className="inline-flex items-center gap-3 text-gray-700 border-b border-gray-700 pb-1 text-sm uppercase tracking-[0.15em]">
@@ -67,8 +67,8 @@ const Portfolio: React.FC = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                  <h3 className="text-xl font-semibold mb-2">{image.title}</h3>
-                  <p className="text-sm opacity-90">{image.description}</p>
+                  <h3 className="font-sohne font-semibold text-xl mb-2">{image.title}</h3>
+                  <p className="text-sm font-graphik opacity-90">{image.description}</p>
                 </div>
               </div>
             </motion.div>
@@ -103,8 +103,8 @@ const Portfolio: React.FC = () => {
                 <X className="w-6 h-6" />
               </button>
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-white">
-                <h3 className="text-2xl font-semibold mb-2">{selectedImage.title}</h3>
-                <p className="text-lg opacity-90">{selectedImage.description}</p>
+                <h3 className="font-sohne font-bold text-2xl mb-2">{selectedImage.title}</h3>
+                <p className="text-lg font-graphik opacity-90">{selectedImage.description}</p>
               </div>
             </motion.div>
           </motion.div>

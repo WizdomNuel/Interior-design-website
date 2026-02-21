@@ -1,4 +1,7 @@
 /* Global styles for Luxe Interiors - FDD Brand System */
+@import url('https://fonts.googleapis.com/css2?family=Sohne:wght@400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Graphik:wght@300;400;500;600;700&display=swap');
+
 html, body, #root {
   height: 100%;
 }
@@ -7,6 +10,15 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Font definitions */
+.font-sohne {
+  font-family: 'Sohne', system-ui, -apple-system, sans-serif;
+}
+
+.font-graphik {
+  font-family: 'Graphik', system-ui, -apple-system, sans-serif;
 }
 
 /* Respect iOS safe-area insets and avoid layout cutoffs on notch devices */

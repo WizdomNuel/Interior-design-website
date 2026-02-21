@@ -17,12 +17,12 @@ const Contact: React.FC = () => {
           {/* Contact Info */}
           <div className="flex flex-col justify-center">
             <span className="text-fdd-dark-text-secondary text-xs font-bold tracking-[0.2em] uppercase mb-4 block">Get in Touch</span>
-            <h2 className="font-serif text-5xl text-fdd-dark-text-primary mb-8 leading-tight">
+            <h2 className="font-sohne font-bold text-5xl text-fdd-dark-text-primary mb-8 leading-tight">
               Let's create something <br/>
               <span className="italic text-fdd-accent-primary">exceptional.</span>
             </h2>
             
-            <p className="text-fdd-dark-text-secondary font-light mb-16 text-lg max-w-md">
+            <p className="text-fdd-dark-text-secondary font-graphik font-light mb-16 text-lg max-w-md">
               We are currently accepting new residential and commercial projects.
             </p>
 
@@ -31,7 +31,7 @@ const Contact: React.FC = () => {
                 <h5 className="font-bold text-fdd-dark-text-primary uppercase tracking-[0.15em] text-xs mb-2 flex items-center gap-2">
                   <MapPin size={14} className="text-fdd-accent-primary" /> Visit Us
                 </h5>
-                <p className="text-fdd-dark-text-secondary font-light pl-6 border-l border-fdd-accent-primary group-hover:border-fdd-accent-secondary transition-colors pl-4">
+                <p className="text-fdd-dark-text-secondary font-graphik font-light pl-6 border-l border-fdd-accent-primary group-hover:border-fdd-accent-secondary transition-colors pl-4">
                   12 Independence Layout,<br/> Awka, Anambra State
                 </p>
               </div>
@@ -40,8 +40,8 @@ const Contact: React.FC = () => {
                 <h5 className="font-bold text-fdd-dark-text-primary uppercase tracking-[0.15em] text-xs mb-2 flex items-center gap-2">
                   <Phone size={14} className="text-fdd-accent-primary" /> Call Us
                 </h5>
-                <p className="text-fdd-dark-text-secondary font-light pl-6 border-l border-fdd-accent-primary group-hover:border-fdd-accent-secondary transition-colors pl-4">
-                  +234 800 123 4567
+                <p className="text-fdd-dark-text-secondary font-graphik font-light pl-6 border-l border-fdd-accent-primary group-hover:border-fdd-accent-secondary transition-colors pl-4">
+                  +234902 368 6568
                 </p>
               </div>
             </div>

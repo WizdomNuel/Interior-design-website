@@ -22,8 +22,8 @@ const About: React.FC = () => {
              whileInView={{ opacity: 1 }}
              viewport={{ once: true }}
           >
-            <span className="text-fdd-dark-text-secondary text-xs font-bold tracking-[0.2em] uppercase mb-6 block">Since 2018</span>
-            <h2 className="font-serif text-5xl md:text-6xl text-fdd-dark-text-primary mb-8 leading-[1.1]">
+            <span className="text-fdd-dark-text-secondary text-xs font-bold tracking-[0.2em] uppercase mb-6 block">Since 2021</span>
+            <h2 className="font-sohne font-bold text-5xl md:text-6xl text-fdd-dark-text-primary mb-8 leading-[1.1]">
               Rooted in Awka,<br/> 
               Inspired by <span className="italic text-fdd-accent-primary">Global Luxury.</span>
             </h2>
@@ -36,11 +36,11 @@ const About: React.FC = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
           >
-            <p className="text-fdd-dark-text-secondary font-light text-lg leading-relaxed mb-6">
+            <p className="text-fdd-dark-text-secondary font-graphik font-light text-lg leading-relaxed mb-6">
               FDD was born from a desire to bring world-class interior design standards to Southeast Nigeria. 
               We noticed a gap between generic finishing and true spatial artistry.
             </p>
-            <p className="text-fdd-dark-text-secondary font-light text-lg leading-relaxed">
+            <p className="text-fdd-dark-text-secondary font-graphik font-light text-lg leading-relaxed">
               Today, we are a multidisciplinary team of designers, architects, and project managers dedicated to 
               transforming the way people live and work. We don't just decorate; we curate lifestyles.
             </p>
@@ -51,8 +51,8 @@ const About: React.FC = () => {
         <div className="relative mb-32">
            <div className="bg-fdd-dark-surface w-full md:w-3/4 ml-auto p-12 md:p-24 relative z-0">
               <div className="md:w-2/3 ml-auto">
-                <h3 className="font-serif text-3xl text-fdd-dark-text-primary mb-6">Meet the Principal</h3>
-                <p className="text-fdd-dark-text-secondary font-light leading-relaxed mb-8 italic text-lg">
+                <h3 className="font-sohne font-bold text-3xl text-fdd-dark-text-primary mb-6">Meet the Founder</h3>
+                <p className="text-fdd-dark-text-secondary font-graphik font-light leading-relaxed mb-8 italic text-lg">
                   The vision for FDD was born in 2020 after Ms Frances attended a Kingdom Economic Summit at Love Ambassadors Ministries, Awka — a moment that became a personal calling to create refined, intentional spaces.
 
                   With over five years managing her father’s export business (2012 - 2018) and later running her own cleaning agency, she built strong operational and client experience, also learnt a lot about marketing and bookkeeping before fully stepping into premium interior design.
@@ -60,8 +60,8 @@ const About: React.FC = () => {
                 <div className="flex items-center gap-4">
                    <div className="h-[1px] w-12 bg-fdd-accent-primary"></div>
                    <div>
-                     <span className="block font-bold text-fdd-dark-text-primary uppercase tracking-widest text-sm">Ms Frances</span>
-                     <span className="block text-fdd-dark-text-secondary text-xs mt-1">Founder & Principal Designer</span>
+                     <span className="block font-sohne font-bold text-fdd-dark-text-primary uppercase tracking-widest text-sm">Ms Frances</span>
+                     <span className="block font-graphik text-fdd-dark-text-secondary text-xs mt-1">Founder & Principal Designer</span>
                    </div>
                 </div>
               </div>
@@ -76,7 +76,7 @@ const About: React.FC = () => {
            >
               <img 
                 src={principalImg} 
-                alt="Chidimma Nwosu - Lead Designer" 
+                alt="Ms Frances Oluebube, Founder, FDD" 
                 className="w-full h-full object-cover shadow-2xl grayscale hover:grayscale-0 transition-all duration-700"
               />
            </motion.div>
@@ -85,7 +85,7 @@ const About: React.FC = () => {
            <div className="md:hidden mt-8">
               <img 
                 src={principalImg} 
-                alt="Chidimma Nwosu - Lead Designer" 
+                alt="Ms Frances Oluebube, Founder, FDD" 
                 className="w-full aspect-square object-cover shadow-lg grayscale"
               />
            </div>

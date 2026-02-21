@@ -50,9 +50,9 @@ const Services: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-between items-end mb-20">
           <div className="max-w-xl">
              <span className="text-fdd-dark-text-secondary text-xs font-bold tracking-[0.2em] uppercase mb-4 block">Expertise</span>
-             <h2 className="font-serif text-4xl text-fdd-dark-text-primary">Holistic Design Solutions</h2>
+             <h2 className="font-sohne font-bold text-4xl text-gray-900">Holistic Design Solutions</h2>
           </div>
-          <p className="text-fdd-dark-text-secondary max-w-sm mt-6 md:mt-0 font-light text-sm leading-relaxed text-right">
+          <p className="text-gray-600 font-graphik max-w-sm mt-6 md:mt-0 font-light text-sm leading-relaxed text-right">
             We offer end-to-end services, handling everything from the initial concept sketches to the final installation.
           </p>
         </div>
@@ -74,11 +74,11 @@ const Services: React.FC = () => {
                 <ArrowUpRight size={20} className="text-fdd-dark-text-secondary group-hover:text-fdd-dark-bg opacity-0 group-hover:opacity-100 transition-all duration-500 -translate-x-4 group-hover:translate-x-0" />
               </div>
               
-              <h3 className="font-serif text-2xl text-fdd-dark-text-primary group-hover:text-fdd-dark-bg transition-colors duration-500 mb-4">
+              <h3 className="font-sohne font-semibold text-2xl text-gray-900 group-hover:text-fdd-dark-bg transition-colors duration-500 mb-4">
                 {service.title}
               </h3>
               
-              <p className="text-fdd-dark-text-secondary group-hover:text-fdd-dark-bg font-light text-sm leading-relaxed transition-colors duration-500">
+              <p className="text-gray-600 font-graphik group-hover:text-fdd-dark-bg font-light text-sm leading-relaxed transition-colors duration-500">
                 {service.description}
               </p>
             </motion.div>

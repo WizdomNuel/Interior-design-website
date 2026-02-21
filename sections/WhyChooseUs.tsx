@@ -6,23 +6,23 @@ import { motion } from 'framer-motion';
 const features = [
   {
     icon: PenTool,
-    title: "Personalized Design",
-    description: "Your space should tell your story. We tailor every texture, color, and layout to fit your unique lifestyle and preferences."
+    title: "Industry-Informed Expertise",
+    description: "With a background in export operations and business management, FDD understands structure, scale, and strategic execution."
   },
   {
     icon: Award,
-    title: "Quality Materials",
-    description: "We source only the finest materials and furniture, ensuring that your interior looks premium and stands the test of time."
+    title: "Refined Client Experience",
+    description: "From consultation to completion, clients experience clarity, professionalism, and seamless coordination."
   },
   {
     icon: Heart,
-    title: "Attention to Detail",
-    description: "From the stitching on a cushion to the lighting ambience, we obsess over the small details that make a big difference."
+    title: "Detail-Driven Precision",
+    description: "Every material, measurement, and finish is reviewed with uncompromising attention."
   },
   {
     icon: Clock,
-    title: "Reliable Delivery",
-    description: "We respect your time. Our project management ensures timely delivery without compromising on the quality of finish."
+    title: "Long-Term Value Creation",
+    description: "Beyond aesthetics, we design spaces that appreciate in experience, function, and brand equity."
   }
 ];
 
@@ -31,8 +31,8 @@ const WhyChooseUs: React.FC = () => {
     <Section id="why-us" bgColor="offwhite">
       <div className="container px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="font-serif text-3xl md:text-4xl text-fdd-dark-text-primary mb-6">Why Choose FDD?</h2>
-          <p className="text-fdd-dark-text-secondary font-light text-lg">
+          <h2 className="font-sohne font-bold text-3xl md:text-4xl text-gray-900 mb-6">Why Choose FDD</h2>
+          <p className="text-gray-600 font-graphik font-light text-lg">
             We bring a standard of excellence that transforms ordinary rooms into extraordinary living experiences.
           </p>
         </div>
@@ -52,8 +52,8 @@ const WhyChooseUs: React.FC = () => {
               <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-fdd-accent-primary text-fdd-dark-bg mb-6">
                 <feature.icon size={28} strokeWidth={1.5} />
               </div>
-              <h3 className="font-serif text-xl text-fdd-dark-text-primary mb-4">{feature.title}</h3>
-              <p className="text-fdd-dark-text-secondary text-sm leading-relaxed font-light">
+              <h3 className="font-sohne font-semibold text-xl text-gray-900 mb-4">{feature.title}</h3>
+              <p className="text-gray-600 font-graphik text-sm leading-relaxed font-light">
                 {feature.description}
               </p>
             </motion.div>
