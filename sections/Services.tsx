@@ -7,52 +7,52 @@ import { motion } from 'framer-motion';
 const services: ServiceItem[] = [
   {
     id: '1',
-    title: 'Residential',
-    description: 'Living spaces defined by comfort and sophisticated aesthetics.',
+    title: 'Residential Interior Design',
+    description: 'Transform your living spaces into personalized sanctuaries of comfort and style.',
     icon: Home,
   },
   {
     id: '2',
-    title: 'Commercial',
-    description: 'High-performance workspaces that inspire creativity and focus.',
+    title: 'Commercial Ditto',
+    description: 'Professional commercial spaces designed for productivity and brand impact.',
     icon: Briefcase,
   },
   {
     id: '3',
-    title: 'Space Planning',
-    description: 'Architectural layout optimization for flow and functionality.',
-    icon: Ruler,
+    title: 'Renovations and Building Facelift',
+    description: 'Complete transformations that breathe new life into existing structures.',
+    icon: Hammer,
   },
   {
     id: '4',
-    title: 'Furnishing',
-    description: 'Curating bespoke furniture, art, and decor elements.',
-    icon: Armchair,
+    title: 'Space Planning and 3D Designs',
+    description: 'Strategic layout optimization with immersive 3D visualization.',
+    icon: Ruler,
   },
   {
     id: '5',
-    title: 'Lighting',
-    description: 'Sculpting space with layered ambient and task lighting.',
-    icon: Lamp,
+    title: 'Furnishing',
+    description: 'Curated furniture and decor solutions that complete your vision.',
+    icon: Armchair,
   },
   {
     id: '6',
-    title: 'Renovation',
-    description: 'Transforming dated structures into modern masterpieces.',
-    icon: Hammer,
+    title: 'Consultations',
+    description: 'Expert guidance and design consultations for your unique needs.',
+    icon: Lamp,
   },
 ];
 
 const Services: React.FC = () => {
   return (
-    <Section id="services" bgColor="offwhite">
+    <Section id="services" bgColor="dark">
       <div className="container px-6">
         <div className="flex flex-col md:flex-row justify-between items-end mb-20">
           <div className="max-w-xl">
              <span className="text-fdd-dark-text-secondary text-xs font-bold tracking-[0.2em] uppercase mb-4 block">Expertise</span>
-             <h2 className="font-sohne font-bold text-4xl text-gray-900">Holistic Design Solutions</h2>
+             <h2 className="font-sohne font-bold text-4xl text-gray-900 dark:text-white">Holistic Design Solutions</h2>
           </div>
-          <p className="text-gray-600 font-graphik max-w-sm mt-6 md:mt-0 font-light text-sm leading-relaxed text-right">
+          <p className="text-white font-graphik max-w-sm mt-6 md:mt-0 font-light text-sm leading-relaxed text-right">
             We offer end-to-end services, handling everything from the initial concept sketches to the final installation.
           </p>
         </div>
@@ -74,7 +74,7 @@ const Services: React.FC = () => {
                 <ArrowUpRight size={20} className="text-fdd-dark-text-secondary group-hover:text-fdd-dark-bg opacity-0 group-hover:opacity-100 transition-all duration-500 -translate-x-4 group-hover:translate-x-0" />
               </div>
               
-              <h3 className="font-sohne font-semibold text-2xl text-gray-900 group-hover:text-fdd-dark-bg transition-colors duration-500 mb-4">
+              <h3 className="font-sohne font-semibold text-2xl text-white group-hover:text-fdd-dark-bg transition-colors duration-500 mb-4">
                 {service.title}
               </h3>
               

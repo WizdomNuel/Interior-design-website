@@ -26,7 +26,7 @@ const CallToAction: React.FC = () => {
             Book a consultation today and let us bring your vision to life with elegance and style.
           </p>
           <Button 
-            variant="primary" 
+            variant="outline" 
             onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
           >
             Start Your Project

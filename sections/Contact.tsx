@@ -87,10 +87,12 @@ const Contact: React.FC = () => {
                   id="service" 
                   className="w-full bg-transparent border-b border-fdd-dark-text-secondary py-4 focus:outline-none focus:border-fdd-accent-primary transition-colors text-fdd-dark-text-primary appearance-none rounded-none"
                 >
-                  <option className="bg-fdd-dark-bg text-fdd-dark-text-primary">Residential Project</option>
-                  <option className="bg-fdd-dark-bg text-fdd-dark-text-primary">Commercial Space</option>
-                  <option className="bg-fdd-dark-bg text-fdd-dark-text-primary">Renovation</option>
-                  <option className="bg-fdd-dark-bg text-fdd-dark-text-primary">Consultation Only</option>
+                  <option className="bg-fdd-dark-bg text-fdd-dark-text-primary">Residential Interior Design</option>
+                  <option className="bg-fdd-dark-bg text-fdd-dark-text-primary">Commercial Ditto</option>
+                  <option className="bg-fdd-dark-bg text-fdd-dark-text-primary">Renovations and Building facelift</option>
+                  <option className="bg-fdd-dark-bg text-fdd-dark-text-primary">Space Planning and 3d Designs</option>
+                  <option className="bg-fdd-dark-bg text-fdd-dark-text-primary">Furnishing</option>
+                  <option className="bg-fdd-dark-bg text-fdd-dark-text-primary">Consultations</option>
                 </select>
                 <label 
                   htmlFor="service" 

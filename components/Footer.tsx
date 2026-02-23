@@ -16,9 +16,9 @@ const Footer: React.FC = () => {
       <div className="container px-6">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0 text-center md:text-left">
-            <div className="flex items-center gap-3 justify-center md:justify-start mb-3">
-              <img src={logoImg} alt="FDD Logo" className="h-12 w-auto" style={{ filter: 'brightness(0) saturate(100%)' }} />
-              <h3 className="font-sohne font-bold text-xl tracking-widest font-bold" style={{ color: 'var(--text-primary)' }}>FDD</h3>
+            <div className="flex items-center -gap-1 justify-center md:justify-start mb-3">
+              <img src={logoImg} alt="FDD Logo" className="h-12 w-auto" />
+              <h3 className="font-serif text-xl tracking-widest font-bold" style={{ color: 'var(--text-primary)' }}>FDD</h3>
             </div>
             <p className="text-sm font-graphik font-light opacity-70">Luxury Interior Design</p>
           </div>

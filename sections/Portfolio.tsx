@@ -18,12 +18,12 @@ interface Image {
 
 const Portfolio: React.FC = () => {
   const [images, setImages] = useState<Image[]>([
-    { src: serviceImage, title: "Modern Living Room", description: "Contemporary design with clean lines and neutral colors" },
-    { src: service1Image, title: "Luxury Kitchen", description: "High-end appliances and custom cabinetry" },
-    { src: service2Image, title: "Elegant Bedroom", description: "Serene retreat with premium furnishings" },
-    { src: service3Image, title: "Sophisticated Bathroom", description: "Spa-like atmosphere with modern fixtures" },
-    { src: service4Image, title: "Home Office", description: "Functional workspace with ergonomic design" },
-    { src: service5Image, title: "Dining Room", description: "Elegant space for entertaining guests" }
+    { src: serviceImage, title: "Modern Kitchen", description: "High-end appliances and custom cabinetry" },
+    { src: service1Image, title: "Luxury Bedroom", description: "Contemporary design with clean lines and neutral colors" },
+    { src: service2Image, title: "Luxury Bedroom", description: "Serene retreat with premium furnishings" },
+    { src: service3Image, title: "Elegant Living Room", description: "Living atmosphere with modern fixtures" },
+    { src: service4Image, title: "Lounge", description: "Elegant space for entertaining guests" },
+    { src: service5Image, title: "Centre Table", description: "Functional workspace with ergonomic design" }
   ]);
 
   const [selectedImage, setSelectedImage] = useState<Image | null>(null);
@@ -38,7 +38,7 @@ const Portfolio: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="font-sohne font-bold text-4xl md:text-5xl text-gray-900 mb-6">
+          <h2 className="font-sohne font-bold text-4xl md:text-5xl text-white mb-6">
             Our Portfolio
           </h2>
           <p className="text-xl font-graphik text-gray-600 max-w-3xl mx-auto mb-8">

@@ -133,13 +133,13 @@ body:not(.dark) {
 }
 
 :not(.dark) .bg-stone-100 { 
-  background-color: #f5f5f5; 
+  background-color: #e2e2e2; 
 }
 
 /* Light mode overrides */
 body.light {
   background-color: #FFFFFF;
-  color: #1b1b1b;
+  color: #333333;
 }
 
 .light .bg-stone-50 { 
@@ -147,15 +147,19 @@ body.light {
 }
 
 .light .text-stone-900 { 
-  color: #1b1b1b; 
+  color: #333333; 
 }
 
 .light .text-stone-500 { 
-  color: #6E6E6E; 
+  color: #666666; 
 }
 
 .light .border-stone-200 { 
   border-color: #e2e2e2; 
+}
+
+.light .bg-stone-100 { 
+  background-color: #f8f8f8; 
 }
 
 /* FDD accent colors across modes */
