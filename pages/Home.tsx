@@ -7,26 +7,30 @@ import Portfolio from '../sections/Portfolio';
 import WhyChooseUs from '../sections/WhyChooseUs';
 import CallToAction from '../sections/CallToAction';
 import Contact from '../sections/Contact';
-import { stagger } from '../components/animVariants';
+import { stagger, containerVariants, fadeUp, slideInLeft, slideInRight, scaleIn } from '../components/animVariants';
 
 const Home: React.FC = () => {
   return (
-    <motion.div initial="hidden" animate="show" variants={stagger}>
+    <motion.div initial="hidden" animate="show" variants={containerVariants}>
       <Hero />
-      <motion.section variants={{ hidden: { opacity: 0, y: 12 }, show: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>
+      <motion.section variants={slideInLeft}>
         <About />
       </motion.section>
-      <motion.section variants={{ hidden: { opacity: 0, y: 12 }, show: { opacity: 1, y: 0, transition: { duration: 0.6, delay: 0.08 } } }}>
+      <motion.section variants={fadeUp}>
         <Services />
       </motion.section>
-      <motion.section variants={{ hidden: { opacity: 0, y: 12 }, show: { opacity: 1, y: 0, transition: { duration: 0.6, delay: 0.16 } } }}>
+      <motion.section variants={slideInRight}>
         <Portfolio />
       </motion.section>
-      <motion.section variants={{ hidden: { opacity: 0, y: 12 }, show: { opacity: 1, y: 0, transition: { duration: 0.6, delay: 0.24 } } }}>
+      <motion.section variants={fadeUp}>
         <WhyChooseUs />
       </motion.section>
-      <CallToAction />
-      <Contact />
+      <motion.section variants={scaleIn}>
+        <CallToAction />
+      </motion.section>
+      <motion.section variants={slideInLeft}>
+        <Contact />
+      </motion.section>
     </motion.div>
   );
 };

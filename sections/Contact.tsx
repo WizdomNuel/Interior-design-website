@@ -10,19 +10,19 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <Section id="contact" bgColor="dark">
+    <Section id="contact" bgColor="offwhite">
       <div className="container px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-24">
           
           {/* Contact Info */}
           <div className="flex flex-col justify-center">
             <span className="text-fdd-dark-text-secondary text-xs font-bold tracking-[0.2em] uppercase mb-4 block">Get in Touch</span>
-            <h2 className="font-sohne font-bold text-5xl text-fdd-dark-text-primary mb-8 leading-tight">
+            <h2 className="font-sohne font-bold text-5xl text-fdd-light-text-primary dark:text-fdd-dark-text-primary mb-8 leading-tight">
               Let's create something <br/>
               <span className="italic text-fdd-accent-primary">exceptional.</span>
             </h2>
             
-            <p className="text-fdd-dark-text-secondary font-graphik font-light mb-16 text-lg max-w-md">
+            <p className="text-fdd-light-text-secondary dark:text-fdd-dark-text-secondary font-graphik font-light mb-16 text-lg max-w-md">
               We are currently accepting new residential and commercial projects.
             </p>
 

@@ -110,9 +110,9 @@ const Navbar: React.FC = () => {
 
       {/* Mobile top header with logo and toggle */}
       <div className="md:hidden flex items-center justify-between px-6 py-4" style={{ backgroundColor: 'var(--bg-primary)' }}>
-        <div className="flex items-center gap-3 justify-center md:justify-start mb-3">
+        <div className="flex items-center gap-0 justify-center md:justify-start mb-3">
           <img src={logoImg} alt="FDD Logo" className="h-12 w-auto" />
-          <h3 className="font-sohne font-bold text-xl tracking-widest" style={{ color: 'var(--text-primary)' }}>FDD</h3>
+          <h3 className="font-serif text-xl tracking-widest" style={{ color: 'var(--text-primary)' }}>FDD</h3>
         </div>
         <motion.button
           onClick={() => setTheme((t) => (t === 'dark' ? 'light' : 'dark'))}

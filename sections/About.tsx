@@ -11,7 +11,7 @@ const About: React.FC = () => {
   ];
 
   return (
-    <Section id="about" bgColor="dark" className="overflow-hidden">
+    <Section id="about" bgColor="offwhite" className="overflow-hidden">
       <div className="container px-6">
         
         {/* Intro Block */}
@@ -23,7 +23,7 @@ const About: React.FC = () => {
              viewport={{ once: true }}
           >
             <span className="text-fdd-dark-text-secondary text-xs font-bold tracking-[0.2em] uppercase mb-6 block">Since 2021</span>
-            <h2 className="font-sohne font-bold text-5xl md:text-6xl text-fdd-dark-text-primary mb-8 leading-[1.1]">
+            <h2 className="font-sohne font-bold text-5xl md:text-6xl text-fdd-light-text-primary dark:text-fdd-dark-text-primary mb-8 leading-[1.1]">
               Rooted in Awka,<br/> 
               Inspired by <span className="italic text-fdd-accent-primary">Global Luxury.</span>
             </h2>
@@ -104,9 +104,9 @@ const About: React.FC = () => {
                transition={{ delay: idx * 0.08, duration: 0.45 }}
                className="hover:shadow-lg"
              >
-                <span className="text-fdd-dark-text-secondary text-5xl font-serif mb-6 block opacity-50">0{idx + 1}</span>
-                <h4 className="text-fdd-dark-text-primary font-serif font-bold text-xl mb-2 leading-tight">{item.title}</h4>
-                <p className="text-fdd-dark-text-secondary font-light text-sm leading-relaxed pr-4">{item.text}</p>
+                <span className="text-fdd-light-text-secondary dark:text-fdd-dark-text-secondary text-5xl font-serif mb-6 block opacity-50">0{idx + 1}</span>
+                <h4 className="text-fdd-light-text-primary dark:text-fdd-dark-text-primary font-serif font-bold text-xl mb-2 leading-tight">{item.title}</h4>
+                <p className="text-fdd-light-text-secondary dark:text-fdd-dark-text-secondary font-light text-sm leading-relaxed pr-4">{item.text}</p>
              </motion.div>
           ))}
         </div>
