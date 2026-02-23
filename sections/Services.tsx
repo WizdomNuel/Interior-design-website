@@ -50,7 +50,7 @@ const Services: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-between items-end mb-20">
           <div className="max-w-xl">
              <span className="text-fdd-dark-text-secondary text-xs font-bold tracking-[0.2em] uppercase mb-4 block">Expertise</span>
-             <h2 className="font-sohne font-bold text-4xl text-gray-900 dark:text-white">Holistic Design Solutions</h2>
+             <h2 className="font-sohne font-bold text-4xl text-white">Holistic Design Solutions</h2>
           </div>
           <p className="text-white font-graphik max-w-sm mt-6 md:mt-0 font-light text-sm leading-relaxed text-right">
             We offer end-to-end services, handling everything from the initial concept sketches to the final installation.
