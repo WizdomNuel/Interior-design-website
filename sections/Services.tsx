@@ -85,7 +85,7 @@ const Services: React.FC = () => {
                 <ArrowUpRight size={20} className="text-fdd-dark-text-secondary group-hover:text-fdd-dark-bg opacity-0 group-hover:opacity-100 transition-all duration-500 -translate-x-4 group-hover:translate-x-0" />
               </div>
               
-              <h3 className="font-sohne font-semibold text-2xl text-fdd-light-text-primary dark:text-white group-hover:text-fdd-dark-bg transition-colors duration-500 mb-4">
+              <h3 className="font-sohne font-semibold text-2xl text-white group-hover:text-fdd-dark-bg transition-colors duration-500 mb-4">
                 {service.title}
               </h3>
               

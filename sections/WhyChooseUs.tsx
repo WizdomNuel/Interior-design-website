@@ -52,7 +52,7 @@ const WhyChooseUs: React.FC = () => {
               <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-fdd-accent-primary text-fdd-dark-bg mb-6">
                 <feature.icon size={28} strokeWidth={1.5} />
               </div>
-              <h3 className="font-sohne font-semibold text-xl text-fdd-light-text-primary dark:text-white mb-4">{feature.title}</h3>
+              <h3 className="font-sohne font-semibold text-xl text-white mb-4">{feature.title}</h3>
               <p className="text-fdd-light-text-secondary dark:text-gray-600 font-graphik text-sm leading-relaxed font-light">
                 {feature.description}
               </p>
