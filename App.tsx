@@ -12,6 +12,7 @@ const AboutPage = lazy(() => import('./pages/AboutPage'));
 const ServicesPage = lazy(() => import('./pages/ServicesPage'));
 const PortfolioPage = lazy(() => import('./pages/PortfolioPage'));
 const ContactPage = lazy(() => import('./pages/ContactPage'));
+const Gallery = lazy(() => import('./pages/Gallery'));
 
 function App() {
   const location = useLocation();
@@ -57,6 +58,7 @@ function App() {
                   <Route path="/about" element={<AboutPage />} />
                   <Route path="/services" element={<ServicesPage />} />
                   <Route path="/portfolio" element={<PortfolioPage />} />
+                  <Route path="/gallery" element={<Gallery />} />
                   <Route path="/contact" element={<ContactPage />} />
                 </Routes>
               </Suspense>

@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-import Section from '../components/Section';
 import { motion } from 'framer-motion';
-import { X, ArrowRight } from 'lucide-react';
-import Button from '../components/Button';
+import { X, ArrowLeft, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 // Import all portfolio images
@@ -72,25 +70,15 @@ interface Image {
   description: string;
 }
 
-const Portfolio: React.FC = () => {
+const Gallery: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<Image | null>(null);
 
-  // Featured images for main portfolio section
-  const featuredImages = [
+  // Complete gallery with all images
+  const allImages = [
     { src: serviceImage, title: "Modern Kitchen", description: "Sleek white cabinetry with marble countertops and premium appliances" },
     { src: service1Image, title: "Luxury Master Bedroom", description: "Elegant retreat with sophisticated lighting and premium furnishings" },
     { src: service2Image, title: "Contemporary Living Room", description: "Stylish seating area with modern decor and comfortable ambiance" },
     { src: service3Image, title: "Modern Bathroom", description: "Elegant marble surfaces with contemporary fixtures and luxury finishes" },
-    { src: service4Image, title: "Formal Dining Room", description: "Sophisticated dining space with elegant table and ambient lighting" },
-    { src: service5Image, title: "Executive Home Office", description: "Professional workspace with ergonomic design and modern amenities" }
-  ];
-
-  // Complete gallery with all images
-  const allImages = [
-    { src: serviceImage, title: "Modern Living Room", description: "Professional luxury with premium finishes" },
-    { src: service1Image, title: "Luxury Master Bedroom", description: "Elegant retreat with sophisticated lighting and premium furnishings" },
-    { src: service2Image, title: "Contemporary Living Room", description: "Stylish seating area with modern decor and comfortable ambiance" },
-    { src: service3Image, title: "Dining Room", description: "Elegant marble surfaces with contemporary fixtures and luxury finishes" },
     { src: service4Image, title: "Formal Dining Room", description: "Sophisticated dining space with elegant table and ambient lighting" },
     { src: service5Image, title: "Executive Home Office", description: "Professional workspace with ergonomic design and modern amenities" },
     { src: service0Image, title: "Contemporary Kitchen", description: "Sleek design with premium finishes" },
@@ -148,40 +136,40 @@ const Portfolio: React.FC = () => {
     { src: service55Image, title: "Designer Conference Room", description: "Professional space with sophisticated amenities" }
   ];
 
-  const images = featuredImages;
-
   return (
-    <Section id="portfolio" className="py-20">
+    <div className="min-h-screen bg-fdd-dark-bg py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="font-sohne font-bold text-4xl md:text-5xl text-white mb-6">
-            Our Portfolio
-          </h2>
-          <p className="text-xl font-graphik text-gray-600 max-w-3xl mx-auto mb-8">
-            Explore our collection of meticulously designed spaces that blend functionality with aesthetic excellence.
-          </p>
           <Link 
-            to="/gallery"
-            className="inline-flex items-center gap-3 text-gray-700 border-b border-gray-700 pb-1 text-sm uppercase tracking-[0.15em] hover:text-fdd-accent-primary transition-colors"
+            to="/portfolio"
+            className="inline-flex items-center gap-2 text-fdd-accent-primary hover:text-fdd-accent-secondary mb-8 transition-colors"
           >
-            View Full Gallery <ArrowRight size={14} />
+            <ArrowLeft size={20} />
+            Back to Portfolio
           </Link>
+          
+          <h1 className="font-sohne font-bold text-4xl md:text-5xl text-white mb-6">
+            Complete Gallery
+          </h1>
+          <p className="text-xl font-graphik text-gray-400 max-w-3xl mx-auto">
+            Explore our complete collection of interior design projects showcasing luxury spaces and sophisticated craftsmanship.
+          </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {images.map((image, index) => (
+        {/* Gallery Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          {allImages.map((image, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.05 }}
               className="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer"
               onClick={() => setSelectedImage(image)}
             >
@@ -191,9 +179,9 @@ const Portfolio: React.FC = () => {
                 className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                  <h3 className="font-sohne font-semibold text-xl mb-2">{image.title}</h3>
-                  <p className="text-sm font-graphik opacity-90">{image.description}</p>
+                <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+                  <h3 className="font-sohne font-semibold text-lg mb-1">{image.title}</h3>
+                  <p className="text-xs font-graphik opacity-90 line-clamp-2">{image.description}</p>
                 </div>
               </div>
             </motion.div>
@@ -213,7 +201,7 @@ const Portfolio: React.FC = () => {
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
-              className="relative max-w-4xl max-h-full"
+              className="relative max-w-6xl max-h-full"
               onClick={(e) => e.stopPropagation()}
             >
               <img
@@ -223,7 +211,7 @@ const Portfolio: React.FC = () => {
               />
               <button
                 onClick={() => setSelectedImage(null)}
-                className="absolute top-4 right-4 text-white bg-black/50 rounded-full p-2 hover:bg-black/70 transition-colors"
+                className="absolute top-4 right-4 text-white bg-black/50 rounded-full p-3 hover:bg-black/70 transition-colors"
               >
                 <X className="w-6 h-6" />
               </button>
@@ -235,8 +223,8 @@ const Portfolio: React.FC = () => {
           </motion.div>
         )}
       </div>
-    </Section>
+    </div>
   );
 };
 
-export default Portfolio;
+export default Gallery;
