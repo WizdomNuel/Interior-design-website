@@ -79,10 +79,10 @@ const Portfolio: React.FC = () => {
   const featuredImages = [
     { src: serviceImage, title: "Modern Kitchen", description: "Sleek white cabinetry with marble countertops and premium appliances" },
     { src: service1Image, title: "Luxury Master Bedroom", description: "Elegant retreat with sophisticated lighting and premium furnishings" },
-    { src: service2Image, title: "Contemporary Living Room", description: "Stylish seating area with modern decor and comfortable ambiance" },
-    { src: service3Image, title: "Modern Bathroom", description: "Elegant marble surfaces with contemporary fixtures and luxury finishes" },
+    { src: service2Image, title: "Contemporary Bedroom", description: "Stylish seating area with modern decor and comfortable ambiance" },
+    { src: service3Image, title: "Modern Living Room", description: "Elegant marble surfaces with contemporary fixtures and luxury finishes" },
     { src: service4Image, title: "Formal Dining Room", description: "Sophisticated dining space with elegant table and ambient lighting" },
-    { src: service5Image, title: "Executive Home Office", description: "Professional workspace with ergonomic design and modern amenities" }
+    { src: service5Image, title: "Executive Waiting Room", description: "Professional workspace with ergonomic design and modern amenities" }
   ];
 
   // Complete gallery with all images
