@@ -39,7 +39,7 @@ const Hero: React.FC = () => {
           <div className="mb-8 flex flex-col items-center gap-4">
             <div className="h-16 w-[1px] bg-fdd-accent-primary/30"></div>
             <span className="text-fdd-dark-text-secondary text-xs font-bold tracking-[0.3em] uppercase">
-              Awka • Nigeria
+              Eastern • Nigeria
             </span>
           </div>
 

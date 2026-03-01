@@ -24,7 +24,7 @@ const About: React.FC = () => {
           >
             <span className="text-fdd-dark-text-secondary text-xs font-bold tracking-[0.2em] uppercase mb-6 block">Since 2021</span>
             <h2 className="font-sohne font-bold text-5xl md:text-6xl text-fdd-light-text-primary dark:text-fdd-dark-text-primary mb-8 leading-[1.1]">
-              Rooted in Awka,<br/> 
+              Rooted in <br/> Eastern Nigeria,<br/> 
               Inspired by <span className="italic text-fdd-accent-primary">Global Luxury.</span>
             </h2>
           </motion.div>
@@ -37,11 +37,11 @@ const About: React.FC = () => {
             transition={{ delay: 0.2 }}
           >
             <p className="text-fdd-dark-text-secondary font-graphik font-light text-lg leading-relaxed mb-6">
-              FDD was born from a desire to bring world-class interior design standards to Southeast Nigeria. 
+              FDD was born from a desire to bring world-class interior design standards to it clients Globally. 
               We noticed a gap between generic finishing and true spatial artistry.
             </p>
             <p className="text-fdd-dark-text-secondary font-graphik font-light text-lg leading-relaxed">
-              Today, we are a multidisciplinary team of designers, architects, and project managers dedicated to 
+              Today, we are a multidisciplinary team of designers, architects, project managers and builders dedicated to 
               transforming the way people live and work. We don't just decorate; we curate lifestyles.
             </p>
           </motion.div>
@@ -55,7 +55,7 @@ const About: React.FC = () => {
                 <p className="text-fdd-dark-text-secondary font-graphik font-light leading-relaxed mb-8 italic text-lg">
                   The vision for FDD was born in 2020 after Ms Frances attended a Kingdom Economic Summit at Love Ambassadors Ministries, Awka — a moment that became a personal calling to create refined, intentional spaces.
 
-                  With over five years managing her father’s export business (2012 - 2018) and later running her own cleaning agency, she built strong operational and client experience, also learnt a lot about marketing and bookkeeping before fully stepping into premium interior design.
+                  With over five years managing her father's Interior design decoration (2012 - 2018) and later running her own cleaning agency, she built strong operational and client experience, also learnt a lot about marketing and bookkeeping before fully stepping into premium interior design.
                 </p>
                 <div className="flex items-center gap-4">
                    <div className="h-[1px] w-12 bg-fdd-accent-primary"></div>

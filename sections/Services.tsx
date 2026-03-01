@@ -14,7 +14,7 @@ const services: ServiceItem[] = [
   },
   {
     id: '2',
-    title: 'Commercial Ditto',
+    title: 'Commercial Interior Design',
     description: 'Professional commercial spaces designed for productivity and brand impact.',
     icon: Briefcase,
   },
@@ -54,7 +54,7 @@ const Services: React.FC = () => {
              <h2 className="font-sohne font-bold text-4xl text-fdd-light-text-primary dark:text-white">Holistic Design Solutions</h2>
           </div>
           <p className="text-fdd-light-text-secondary dark:text-white font-graphik max-w-sm mt-6 md:mt-0 font-light text-sm leading-relaxed text-right">
-            We offer end-to-end services, handling everything from initial concept sketches to final installation.
+            We offer end-to-end services, handling everything from initial concept sketches to final results.
           </p>
         </div>
 

@@ -7,7 +7,7 @@ const features = [
   {
     icon: PenTool,
     title: "Industry-Informed Expertise",
-    description: "With a background in export operations and business management, FDD understands structure, scale, and strategic execution."
+    description: "With a background in Interior design decoration FDD understands structure, scale, and strategic execution."
   },
   {
     icon: Award,
