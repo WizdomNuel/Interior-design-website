@@ -89,7 +89,7 @@ const Gallery: React.FC = () => {
     { src: serv20Image, title: "Sunroom", description: "Bright space with natural light and comfortable relaxation areas" },
     { src: serv21Image, title: "Living room", description: "Cozy living area with elegant seating and natural light" },
     { src: serv22Image, title: "Visitors lounge", description: "Elegant space for guests with comfortable seating and sophisticated design" },
-    { src: serv23Image, title: "Craft Room", description: "Creative workspace with organized storage and ample lighting" },
+    { src: serv23Image, title: "Living room", description: "Transformed living space with luxury finishes and comfortable seating" },
     { src: serv24Image, title: "Sitting room", description: "Cozy sitting area with comfortable seating and elegant design" },
     { src: serv25Image, title: "Pantry", description: "Organized storage space with custom shelving and premium finishes" },
     { src: serv26Image, title: "Living room", description: "Transformed living space with luxury finishes and comfortable seating" },
