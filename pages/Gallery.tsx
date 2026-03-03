@@ -3,66 +3,47 @@ import { motion } from 'framer-motion';
 import { X, ArrowLeft, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-// Import all portfolio images
-import serviceImage from '../assets/service.png';
-import service1Image from '../assets/service1.png';
-import service2Image from '../assets/service2.png';
-import service3Image from '../assets/service3.jpeg';
-import service4Image from '../assets/service4.jpeg';
-import service5Image from '../assets/service5.jpeg';
-import service0Image from '../assets/service0.jpeg';
-import service01Image from '../assets/service01.jpeg';
-import service02Image from '../assets/service02.jpeg';
-import service06Image from '../assets/service06.jpeg';
-import service07Image from '../assets/service07.jpeg';
-import service08Image from '../assets/service08.jpeg';
-import service09Image from '../assets/service09.jpeg';
-import service10Image from '../assets/service10.jpeg';
-import service11Image from '../assets/service11.jpeg';
-import service12Image from '../assets/service12.jpeg';
-import service13Image from '../assets/service13.jpeg';
-import service14Image from '../assets/service14.jpeg';
-import service15Image from '../assets/service15.jpeg';
-import service16Image from '../assets/service16.jpeg';
-import service17Image from '../assets/service17.jpeg';
-import service18Image from '../assets/service18.jpeg';
-import service19Image from '../assets/service19.jpeg';
-import service20Image from '../assets/service20.jpeg';
-import service21Image from '../assets/service21.jpeg';
-import service22Image from '../assets/service22.jpeg';
-import service23Image from '../assets/service23.jpeg';
-import service24Image from '../assets/service24.jpeg';
-import service25Image from '../assets/service25.jpeg';
-import service26Image from '../assets/service26.jpeg';
-import service27Image from '../assets/service27.jpeg';
-import service28Image from '../assets/service28.jpeg';
-import service29Image from '../assets/service29.jpeg';
-import service30Image from '../assets/service30.jpeg';
-import service31Image from '../assets/service31.jpeg';
-import service32Image from '../assets/service32.jpeg';
-import service33Image from '../assets/service33.jpeg';
-import service34Image from '../assets/service34.jpeg';
-import service35Image from '../assets/service35.jpeg';
-import service36Image from '../assets/service36.jpeg';
-import service37Image from '../assets/service37.jpeg';
-import service38Image from '../assets/service38.jpeg';
-import service39Image from '../assets/service39.jpeg';
-import service40Image from '../assets/service40.jpeg';
-import service41Image from '../assets/service41.jpeg';
-import service42Image from '../assets/service42.jpeg';
-import service43Image from '../assets/service43.jpeg';
-import service44Image from '../assets/service44.jpeg';
-import service45Image from '../assets/service45.jpeg';
-import service46Image from '../assets/service46.jpeg';
-import service47Image from '../assets/service47.jpeg';
-import service48Image from '../assets/service48.jpeg';
-import service49Image from '../assets/service49.jpeg';
-import service50Image from '../assets/service50.jpeg';
-import service51Image from '../assets/service51.jpeg';
-import service52Image from '../assets/service52.jpeg';
-import service53Image from '../assets/service53.jpeg';
-import service54Image from '../assets/service54.jpeg';
-import service55Image from '../assets/service55.jpeg';
+// Import available portfolio images
+import servImage from '../assets/serv.png';
+import serv0Image from '../assets/serv0.jpeg';
+import serv01Image from '../assets/serv01.png';
+import serv02Image from '../assets/serv02.png';
+import serv03Image from '../assets/serv03.png';
+import serv04Image from '../assets/serv04.png';
+import serv05Image from '../assets/serv05.png';
+import serv06Image from '../assets/serv06.png';
+import serv07Image from '../assets/serv07.png';
+import serv08Image from '../assets/serv08.jpeg';
+import serv09Image from '../assets/serv09.jpeg';
+import serv1Image from '../assets/serv1.jpeg';
+import serv2Image from '../assets/serv2.jpeg';
+import serv3Image from '../assets/serv3.jpeg';
+import serv4Image from '../assets/serv4.jpeg';
+import serv5Image from '../assets/serv5.jpeg';
+import serv6Image from '../assets/serv6.jpeg';
+import serv7Image from '../assets/ser7.jpeg';
+import serv8Image from '../assets/serv8.jpeg';
+import serv9Image from '../assets/serv9.jpeg';
+import serv10Image from '../assets/serv10.jpeg';
+import serv11Image from '../assets/serv11.jpeg';
+import serv12Image from '../assets/serv12.jpeg';
+import serv13Image from '../assets/serv13.jpeg';
+import serv14Image from '../assets/serv14.jpeg';
+import serv15Image from '../assets/serv15.jpeg';
+import serv16Image from '../assets/serv16.jpeg';
+import serv17Image from '../assets/serv17.jpeg';
+import serv18Image from '../assets/serv18.jpeg';
+import serv19Image from '../assets/serv19.jpeg';
+import serv20Image from '../assets/serv20.jpeg';
+import serv21Image from '../assets/serv21.jpeg';
+import serv22Image from '../assets/serv22.jpeg';
+import serv23Image from '../assets/serv23.jpeg';
+import serv24Image from '../assets/serv24.jpeg';
+import serv25Image from '../assets/serv25.jpeg';
+import serv26Image from '../assets/serv26.jpeg';
+import serv27Image from '../assets/serv27.jpeg';
+import serv28Image from '../assets/serv28.jpeg';
+import serv29Image from '../assets/serv29.jpeg';
 
 interface Image {
   src: string;
@@ -73,67 +54,48 @@ interface Image {
 const Gallery: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<Image | null>(null);
 
-  // Complete gallery with all images
+  // Gallery with available images
   const allImages = [
-    { src: serviceImage, title: "Modern Kitchen", description: "Sleek white cabinetry with marble countertops and premium appliances" },
-    { src: service1Image, title: "Luxury Master Bedroom", description: "Elegant Bedroom with sophisticated lighting and premium furnishings" },
-    { src: service2Image, title: "Luxury Master Bedroom", description: "Elegant Bedroom with sophisticated lighting and premium furnishings" },
-    { src: service3Image, title: "Modern Living Room", description: "Elegant marble surfaces living room with contemporary fixtures and luxury finishes" },
-    { src: service4Image, title: "Formal Dining Room", description: "Sophisticated dining space with elegant table and ambient lighting" },
-    { src: service5Image, title: "Executive Waiting Room", description: "Professional workspace with ergonomic design and modern amenities" },
-    { src: service0Image, title: "Modern Living Room", description: "Elegant marble surfaces living room with contemporary fixtures and luxury finishes" },
-    { src: service01Image, title: "Modern Pathway", description: "Elegant pathway space" },
-    { src: service02Image, title: "Modern Gym Room", description: "Spa-like retreat with premium fixtures" },
-    { src: service06Image, title: "Modern Lobby", description: "Professional lobby with sophisticated design" },
-    { src: service07Image, title: "Formal Dining Room", description: "Sophisticated dining space with elegant table and ambient lighting" },
-    { src: service08Image, title: "Luxury Master Bedroom", description: "Elegant Bedroom with sophisticated lighting and premium furnishings" },
-    { src: service09Image, title: "Luxury Master Bedroom", description: "Elegant Bedroom with sophisticated lighting and premium furnishings" },
-    { src: service10Image, title: "Luxury Curtains", description: "Clean lines and serene atmosphere" },
-    { src: service11Image, title: "Modern Living Room", description: "Elegant marble surfaces living room with contemporary fixtures and luxury finishes" },
-    { src: service12Image, title: "Luxury Master Bedroom", description: "Elegant Bedroom with sophisticated lighting and premium furnishings" },
-    { src: service13Image, title: "Modern Living Room", description: "Elegant marble surfaces living room with contemporary fixtures and luxury finishes" },
-    { src: service14Image, title: "Luxury Master Bedroom", description: "Elegant Bedroom with sophisticated lighting and premium furnishings" },
-    { src: service15Image, title: "Modern Living Room", description: "Elegant marble surfaces living room with contemporary fixtures and luxury finishes" },
-    { src: service16Image, title: "Modern Living Room", description: "Elegant marble surfaces living room with contemporary fixtures and luxury finishes" },
-    { src: service17Image, title: "Executive Suite", description: "Professional luxury with premium finishes" },
-    { src: service18Image, title: "Modern Game Room", description: "Tailored design with high-end game equipment" },
-    { src: service19Image, title: "Modern Living Room", description: "Elegant marble surfaces living room with contemporary fixtures and luxury finishes" },
-    { src: service20Image, title: "Modern Living Room", description: "Elegant marble surfaces living room with contemporary fixtures and luxury finishes" },
-    { src: service21Image, title: "Modern Living Room", description: "Elegant marble surfaces living room with contemporary fixtures and luxury finishes" },
-    { src: service22Image, title: "Modern Living Room", description: "Elegant marble surfaces living room with contemporary fixtures and luxury finishes" },
-    { src: service23Image, title: "Modern Gym Room", description: "Spa-like retreat with premium fixtures" },
-    { src: service24Image, title: "Designer Pool", description: "Stylish entertainment pool space with modern amenities" },
-    { src: service25Image, title: "Contemporary Suite", description: "Modern luxury with thoughtful details" },
-    { src: service26Image, title: "Minimalist Office", description: "Clean workspace with efficient design" },
-    { src: service27Image, title: "Modern Game Room", description: "Tailored design with high-end game equipment" },
-    { src: service28Image, title: "Modern Living Room", description: "Contemporary design with comfortable seating" },
-    { src: service29Image, title: "Executive Penthouse", description: "Sophisticated urban living space" },
-    { src: service30Image, title: "Designer Living Room", description: "Luxurious retreat with custom furnishings" },
-    { src: service31Image, title: "Modern Gym Room", description: "Spa-like retreat with premium fixtures" },
-    { src: service32Image, title: "Luxury Staircase", description: "Sleek design with functional layout" },
-    { src: service33Image, title: "Luxury Bedroom", description: "Elegant space with premium finishes" },
-    { src: service34Image, title: "Designer Pool", description: "Sophisticated entertainment pool space" },
-    { src: service35Image, title: "Designer Living Room", description: "Contemporary design with luxury fixtures" },
-    { src: service36Image, title: "Executive Gym Suite", description: "Professional luxury with modern gym amenities" },
-    { src: service37Image, title: "Custom Living Space", description: "Tailored design with premium materials" },
-    { src: service38Image, title: "Modern Living Room", description: "Elegant marble surfaces living room with contemporary fixtures and luxury finishes" },
-    { src: service39Image, title: "Modern Pathway", description: "Contemporary style pathway with high-end features" },
-    { src: service40Image, title: "Designer Living Room", description: "Luxurious living room with sophisticated styling" },
-    // { src: service41Image, title: "Contemporary Office", description: "Modern workspace with elegant solutions" },
-    // { src: service42Image, title: "Executive Living Room", description: "Sophisticated space with premium furnishings" },
-    // { src: service43Image, title: "Luxury Kitchen Suite", description: "Professional-grade design with custom features" },
-    // { src: service44Image, title: "Modern Penthouse", description: "Contemporary urban luxury with panoramic views" },
-    // { src: service45Image, title: "Designer Dining Room", description: "Elegant space for sophisticated entertaining" },
-    // { src: service46Image, title: "Executive Lounge", description: "Professional space with modern amenities" },
-    // { src: service47Image, title: "Custom Bedroom Suite", description: "Luxurious retreat with personalized design" },
-    // { src: service48Image, title: "Modern Conference Space", description: "Professional environment with sophisticated styling" },
-    // { src: service49Image, title: "Luxury Living Suite", description: "Elegant space with premium furnishings" },
-    // { src: service50Image, title: "Contemporary Kitchen", description: "Modern design with high-end appliances" },
-    // { src: service51Image, title: "Designer Office", description: "Professional workspace with custom solutions" },
-    // { src: service52Image, title: "Executive Living Area", description: "Sophisticated space with modern design" },
-    // { src: service53Image, title: "Luxury Kitchen Design", description: "Premium appliances with custom cabinetry" },
-    // { src: service54Image, title: "Modern Bedroom Suite", description: "Contemporary retreat with elegant furnishings" },
-    // { src: service55Image, title: "Designer Conference Room", description: "Professional space with sophisticated amenities" }
+    { src: servImage, title: "Dining Lounge", description: "Elegant lounge with premium and comfortable seating arrangement" },
+    { src: serv0Image, title: "Living room", description: "Modern living room with stylish sofas and contemporary furniture" },
+    { src: serv01Image, title: "Game room", description: "Entertainment and gaming lounge premium sofas and media setup" },
+    { src: serv02Image, title: "Game room", description: "Entertainment and gaming lounge premium sofas and media setup" },
+    { src: serv03Image, title: "Elegant pool space", description: "Luxury pool with custom furniture, ambient lighting and fresh water" },
+    { src: serv04Image, title: "Living room", description: "Comfortable living room with premium sofas and sophisticated lighting" },
+    { src: serv05Image, title: "Living room", description: "Elegant living space with designer sofas and modern furnishings" },
+    { src: serv06Image, title: "Living room", description: "Luxurious living room with comfortable seating and stylish decor" },
+    { src: serv07Image, title: "Bedroom", description: "Luxurious bedroom with modern furniture and modern fixtures" },
+    { src: serv08Image, title: "Living room", description: "Sophisticated living space with premium sofas and elegant design"},
+    { src: serv09Image, title: "Guest Suite", description: "Comfortable accommodation with premium amenities" },
+    { src: serv1Image, title: "Living room", description: "Contemporary living room with modern sofas and stylish chairs" },
+    { src: serv2Image, title: "Living room", description: "Sophisticated living space with premium sofas and elegant design" },
+    { src: serv3Image, title: "Guest Suite", description: "Comfortable accommodation with premium amenities" },
+    { src: serv4Image, title: "Living room", description: "Elegant living space with comfortable sofas and premium furnishings" },
+    { src: serv5Image, title: "Game room", description: "Entertainment and gaming lounge premium sofas and media setup" },
+    { src: serv6Image, title: "Sitting room", description: "Luxurious living space with stylish seating and elegant design" },
+    { src: serv7Image, title: "Game room", description: "Entertainment and gaming lounge premium sofas and media setup" },
+    { src: serv8Image, title: "Living room", description: "Elegant living space with comfortable sofas and premium furnishings" },
+    { src: serv9Image, title: "Dining space", description: "Elegant dining area with premium furniture and sophisticated lighting" },
+    { src: serv10Image, title: "Dining space", description: "Spacious dining area with elegant tables and premium seating" },
+    { src: serv11Image, title: "Living room", description: "Stylish living space with premium sofas and sophisticated design" },
+    { src: serv12Image, title: "Living room", description: "Elegant living room with comfortable seating and luxury decor" },
+    { src: serv13Image, title: "Living room", description: "Spacious living room with elegant sofas and modern furnishings" },
+    { src: serv14Image, title: "Living room", description: "Entertainment space with panoramic views and luxury amenities" },
+    { src: serv15Image, title: "Living room", description: "Elegant living room with comfortable seating and luxury decor" },
+    { src: serv16Image, title: "Living room", description: "Elegant living room with comfortable seating and luxury decor" },
+    { src: serv17Image, title: "Living room", description: "Entertainment living space with premium sofas and media setup" },
+    { src: serv18Image, title: "Living room", description: "Elegant living room with comfortable seating and luxury decor" },
+    { src: serv19Image, title: "Living room", description: "Recreational living space with comfortable sofas and entertainment systems" },
+    { src: serv20Image, title: "Sunroom", description: "Bright space with natural light and comfortable relaxation areas" },
+    { src: serv21Image, title: "Living room", description: "Cozy living area with elegant seating and natural light" },
+    { src: serv22Image, title: "Visitors lounge", description: "Elegant space for guests with comfortable seating and sophisticated design" },
+    { src: serv23Image, title: "Craft Room", description: "Creative workspace with organized storage and ample lighting" },
+    { src: serv24Image, title: "Sitting room", description: "Cozy sitting area with comfortable seating and elegant design" },
+    { src: serv25Image, title: "Pantry", description: "Organized storage space with custom shelving and premium finishes" },
+    { src: serv26Image, title: "Living room", description: "Transformed living space with luxury finishes and comfortable seating" },
+    { src: serv27Image, title: "Living room", description: "Transformed living space with luxury finishes and comfortable seating" },
+    { src: serv28Image, title: "Living room", description: "Transformed living space with luxury finishes and comfortable seating" },
+    { src: serv29Image, title: "Living room", description: "Transformed living space with luxury finishes and comfortable seating" },
   ];
 
   return (
