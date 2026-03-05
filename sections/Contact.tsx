@@ -22,7 +22,7 @@ const Contact: React.FC = () => {
               <span className="italic text-fdd-accent-primary">exceptional.</span>
             </h2>
             
-            <p className="text-fdd-light-text-secondary dark:text-fdd-dark-text-secondary font-graphik font-light mb-16 text-lg max-w-md">
+            <p className="text-fdd-light-text-secondary dark:text-fdd-dark-text-secondary font-graphik font-medium mb-16 text-lg max-w-md" style={{color: '#BFBFBF'}}>
               We are currently accepting new residential and commercial projects.
             </p>
 
@@ -31,7 +31,7 @@ const Contact: React.FC = () => {
                 <h5 className="font-bold text-fdd-dark-text-primary uppercase tracking-[0.15em] text-xs mb-2 flex items-center gap-2">
                   <MapPin size={14} className="text-fdd-accent-primary" /> Visit Us
                 </h5>
-                <p className="text-fdd-dark-text-secondary font-graphik font-light pl-6 border-l border-fdd-accent-primary group-hover:border-fdd-accent-secondary transition-colors pl-4">
+                <p className="text-fdd-dark-text-secondary font-graphik font-medium pl-6 border-l border-fdd-accent-primary group-hover:border-fdd-accent-secondary transition-colors pl-4" style={{color: '#BFBFBF'}}>
                   12 Independence Layout,<br/> Awka, Anambra State
                 </p>
               </div>
@@ -40,7 +40,7 @@ const Contact: React.FC = () => {
                 <h5 className="font-bold text-fdd-dark-text-primary uppercase tracking-[0.15em] text-xs mb-2 flex items-center gap-2">
                   <Phone size={14} className="text-fdd-accent-primary" /> Call Us
                 </h5>
-                <p className="text-fdd-dark-text-secondary font-graphik font-light pl-6 border-l border-fdd-accent-primary group-hover:border-fdd-accent-secondary transition-colors pl-4">
+                <p className="text-fdd-dark-text-secondary font-graphik font-medium pl-6 border-l border-fdd-accent-primary group-hover:border-fdd-accent-secondary transition-colors pl-4" style={{color: '#BFBFBF'}}>
                   +234902 368 6568
                 </p>
               </div>
@@ -90,7 +90,7 @@ const Contact: React.FC = () => {
                   <option className="bg-fdd-dark-bg text-fdd-dark-text-primary">Residential Interior Design</option>
                   <option className="bg-fdd-dark-bg text-fdd-dark-text-primary">Commercial Ditto</option>
                   <option className="bg-fdd-dark-bg text-fdd-dark-text-primary">Renovations and Building facelift</option>
-                  <option className="bg-fdd-dark-bg text-fdd-dark-text-primary">Space Planning and 3d Designs</option>
+                  <option className="bg-fdd-dark-bg text-fdd-dark-text-primary">Space Planning and 2D/3D Designs</option>
                   <option className="bg-fdd-dark-bg text-fdd-dark-text-primary">Furnishing</option>
                   <option className="bg-fdd-dark-bg text-fdd-dark-text-primary">Consultations</option>
                 </select>
@@ -113,7 +113,21 @@ const Contact: React.FC = () => {
             </form>
           </div>
 
+        {/* Contact Information */}
+        <div className="mt-16 text-center">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-8">
+            <div className="text-fdd-dark-text-primary">
+              <p className="font-sohne font-bold text-lg mb-2">Second number:</p>
+              <p className="font-graphik text-xl">+234 703 124 3608</p>
+            </div>
+            <div className="text-fdd-dark-text-primary">
+              <p className="font-sohne font-bold text-lg mb-2">Email:</p>
+              <p className="font-graphik text-xl">support@fdd.com</p>
+            </div>
+          </div>
         </div>
+
+      </div>
       </div>
     </Section>
   );

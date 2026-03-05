@@ -7,7 +7,7 @@ const features = [
   {
     icon: PenTool,
     title: "Industry-Informed Expertise",
-    description: "With a background in Interior design decoration FDD understands structure, scale, and strategic execution."
+    description: "With a background in building construction and Interior design finishes. FDD understands structure, scale, and strategic execution."
   },
   {
     icon: Award,
@@ -32,8 +32,8 @@ const WhyChooseUs: React.FC = () => {
       <div className="container px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="font-sohne font-bold text-3xl md:text-4xl text-fdd-light-text-primary dark:text-white mb-6">Why Choose FDD</h2>
-          <p className="text-fdd-light-text-secondary dark:text-gray-600 font-graphik font-light text-lg">
-            We bring a standard of excellence that transforms ordinary rooms into extraordinary living experiences.
+          <p className="text-fdd-light-text-secondary dark:text-gray-600 font-graphik font-medium text-lg" style={{color: '#BFBFBF'}}>
+            We bring a standard of excellence that transforms ordinary spaces into extraordinary living experiences.
           </p>
         </div>
 
@@ -53,7 +53,7 @@ const WhyChooseUs: React.FC = () => {
                 <feature.icon size={28} strokeWidth={1.5} />
               </div>
               <h3 className="font-sohne font-semibold text-xl text-white mb-4">{feature.title}</h3>
-              <p className="text-fdd-light-text-secondary dark:text-gray-600 font-graphik text-sm leading-relaxed font-light">
+              <p className="text-fdd-light-text-secondary dark:text-gray-600 font-graphik text-sm leading-relaxed font-medium" style={{color: '#BFBFBF'}}>
                 {feature.description}
               </p>
             </motion.div>

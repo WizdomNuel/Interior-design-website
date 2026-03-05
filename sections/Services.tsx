@@ -26,8 +26,8 @@ const services: ServiceItem[] = [
   },
   {
     id: '4',
-    title: 'Space Planning and 3D Designs',
-    description: 'Strategic layout optimization with immersive 3D visualization.',
+    title: 'Space Planning and 2D/3D Designs',
+    description: 'Strategic layout optimization with immersive 2D/3D visualization.',
     icon: Ruler,
   },
   {
@@ -53,8 +53,8 @@ const Services: React.FC = () => {
              <span className="text-fdd-dark-text-secondary text-xs font-bold tracking-[0.2em] uppercase mb-4 block">Expertise</span>
              <h2 className="font-sohne font-bold text-4xl text-fdd-light-text-primary dark:text-white">Holistic Design Solutions</h2>
           </div>
-          <p className="text-fdd-light-text-secondary dark:text-white font-graphik max-w-sm mt-6 md:mt-0 font-light text-sm leading-relaxed text-right">
-            We offer end-to-end services, handling everything from initial concept sketches to final results.
+          <p className="text-fdd-light-text-secondary dark:text-white font-graphik max-w-sm mt-6 md:mt-0 font-medium text-sm leading-relaxed text-right">
+            We offer end-to-end services, handling everything from initial concept designs to final results.
           </p>
         </div>
 
@@ -89,7 +89,7 @@ const Services: React.FC = () => {
                 {service.title}
               </h3>
               
-              <p className="text-fdd-light-text-secondary dark:text-gray-600 font-graphik group-hover:text-fdd-dark-bg font-light text-sm leading-relaxed transition-colors duration-500">
+              <p className="text-fdd-light-text-secondary dark:text-gray-600 font-graphik group-hover:text-fdd-dark-bg font-medium text-sm leading-relaxed transition-colors duration-500" style={{color: '#BFBFBF'}}>
                 {service.description}
               </p>
               </motion.div>

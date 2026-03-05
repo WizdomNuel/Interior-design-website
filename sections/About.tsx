@@ -101,7 +101,7 @@ const About: React.FC = () => {
             className="text-center max-w-4xl mx-auto"
           >
             <p className="text-fdd-dark-text-secondary font-graphik font-light text-lg leading-relaxed italic">
-              At FDD, every project is treated as a personal commitment, designed to reflect the client's unique personality and lifestyle. By managing every detail—from sourcing materials to overseeing every stage of execution—clients can trust that their vision is fully realized without constant oversight or worry. Through careful research and intentional planning, FDD ensures that each space is not only beautiful but seamless, delivering peace of mind and a truly tailored experience.
+              At FDD, every project is treated as a personal commitment, designed to reflect the client's unique personality and lifestyle. By managing every detail—from space planning, 2D/3D visualization, material sourcing—clients can trust that their vision is fully realized without constant oversight or worry. Through careful research and intentional planning, FDD ensures that each space is not only beautiful but seamless, delivering peace of mind and a truly tailored experience.
             </p>
           </motion.div>
         </div>
