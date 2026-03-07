@@ -62,6 +62,7 @@ const Hero: React.FC = () => {
             <Button 
               variant="text" 
               className="bg-gradient-to-r from-fdd-accent-primary to-fdd-accent-secondary text-white hover:from-fdd-accent-secondary hover:to-fdd-accent-primary border-none px-8 py-4 rounded-lg font-bold shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
+              style={{ color: '#FFFFFF !important' }}
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Start Conversation

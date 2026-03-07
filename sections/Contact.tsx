@@ -44,6 +44,24 @@ const Contact: React.FC = () => {
                   +234902 368 6568
                 </p>
               </div>
+
+              <div className="group">
+                <h5 className="font-bold text-fdd-dark-text-primary uppercase tracking-[0.15em] text-xs mb-2 flex items-center gap-2">
+                  <Phone size={14} className="text-fdd-accent-primary" /> Second Number
+                </h5>
+                <p className="text-fdd-dark-text-secondary font-graphik font-medium pl-6 border-l border-fdd-accent-primary group-hover:border-fdd-accent-secondary transition-colors pl-4" style={{color: '#BFBFBF'}}>
+                  +234 703 124 3608
+                </p>
+              </div>
+
+              <div className="group">
+                <h5 className="font-bold text-fdd-dark-text-primary uppercase tracking-[0.15em] text-xs mb-2 flex items-center gap-2">
+                  <Mail size={14} className="text-fdd-accent-primary" /> Email Us
+                </h5>
+                <p className="text-fdd-dark-text-secondary font-graphik font-medium pl-6 border-l border-fdd-accent-primary group-hover:border-fdd-accent-secondary transition-colors pl-4" style={{color: '#BFBFBF'}}>
+                  support@fdd.com
+                </p>
+              </div>
             </div>
           </div>
 

@@ -27,15 +27,13 @@ const Portfolio: React.FC = () => {
 
   // Featured images for main portfolio section
   const featuredImages = [
-    { src: portImage, title: "Living room", description: "Elegant living space with premium sofas and comfortable seating arrangement" },
-    { src: port01Image, title: "Living room", description: "Modern living room with stylish sofas and contemporary furniture" },
-    { src: port07Image, title: "Game room", description: "Entertainment and gaming lounge premium sofas and media setup" },
-    { src: port02Image, title: "Living room", description: "Spacious living room with luxury sofas and elegant decor" },
-    { src: port03Image, title: "Living room", description: "Spacious living room with luxury sofas and elegant decor" },
-    { src: port04Image, title: "Bedroom", description: "Luxurious bedroom with modern furniture and modern fixtures" },
     { src: port05Image, title: "Living room", description: "Spacious living room with luxury sofas and elegant decor"  },
-    { src: port06Image, title: "Pool Area", description: "Luxury poolside retreat with elegant landscaping" },
     { src: servImage, title: "Dining Lounge", description: "Elegant lounge with premium and comfortable seating arrangement" },
+    { src: port01Image, title: "Living room", description: "Modern living room with stylish sofas and contemporary furniture" },
+    { src: port04Image, title: "Bedroom", description: "Luxurious bedroom with modern furniture and modern fixtures" },
+    { src: portImage, title: "Living room", description: "Elegant living space with premium sofas and comfortable seating arrangement" },
+    { src: port07Image, title: "Game room", description: "Entertainment and gaming lounge premium sofas and media setup" },
+    { src: port06Image, title: "Pool Area", description: "Luxury poolside retreat with elegant landscaping" },
   ];
 
   // Complete gallery with available images
