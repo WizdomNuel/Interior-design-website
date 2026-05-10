@@ -1,17 +1,17 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import principalImg from '../assets/franc.jpeg';
+import principalImg from '../assets/myimage.png';
 import Section from '../components/Section';
 
 const About: React.FC = () => {
   const values = [
     { title: 'Excellence Without Compromise', text: 'We approach every project with meticulous attention to detail, ensuring every finish, texture, and layout reflects refined craftsmanship.' },
-    { title: 'Intentional Design', text: 'Every space is designed with purpose — aligned with client\'s lifestyle, identity, and long-term vision.' },
+    { title: 'Intentional Design', text: 'Every space is designed with purpose — aligned with the client’s lifestyle, identity, and long-term vision.' },
     { title: 'Integrity in Execution', text: 'Transparent processes, disciplined timelines, and responsible resource management define how we operate.' }
   ];
 
   return (
-    <Section id="about" bgColor="offwhite" className="overflow-hidden">
+    <Section id="about" bgColor="dark" className="overflow-hidden">
       <div className="container px-6">
         
         {/* Intro Block */}
@@ -22,9 +22,9 @@ const About: React.FC = () => {
              whileInView={{ opacity: 1 }}
              viewport={{ once: true }}
           >
-            <span className="text-fdd-dark-text-secondary text-xs font-bold tracking-[0.2em] uppercase mb-6 block">Since 2021</span>
-            <h2 className="font-sohne font-bold text-5xl md:text-6xl text-fdd-light-text-primary dark:text-fdd-dark-text-primary mb-8 leading-[1.1]">
-              Rooted in <br/> Eastern Nigeria,<br/> 
+            <span className="text-fdd-dark-text-secondary text-xs font-bold tracking-[0.2em] uppercase mb-6 block">Since 2018</span>
+            <h2 className="font-serif text-5xl md:text-6xl text-fdd-dark-text-primary mb-8 leading-[1.1]">
+              Rooted in Awka,<br/> 
               Inspired by <span className="italic text-fdd-accent-primary">Global Luxury.</span>
             </h2>
           </motion.div>
@@ -36,13 +36,13 @@ const About: React.FC = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
           >
-            <p className="text-fdd-dark-text-secondary font-graphik font-light text-lg leading-relaxed mb-6">
-              FDD was born from a desire to bring world-class interior design standards to it clients Globally. 
+            <p className="text-fdd-dark-text-secondary font-light text-lg leading-relaxed mb-6">
+              FDD was born from a desire to bring world-class interior design standards to Southeast Nigeria. 
               We noticed a gap between generic finishing and true spatial artistry.
             </p>
-            <p className="text-fdd-dark-text-secondary font-graphik font-light text-lg leading-relaxed">
-              Today, we are a multidisciplinary team of designers, architects, project managers and builders dedicated to 
-              transforming way people live and work. We don't just decorate; we curate lifestyles.
+            <p className="text-fdd-dark-text-secondary font-light text-lg leading-relaxed">
+              Today, we are a multidisciplinary team of designers, architects, and project managers dedicated to 
+              transforming the way people live and work. We don't just decorate; we curate lifestyles.
             </p>
           </motion.div>
         </div>
@@ -51,17 +51,17 @@ const About: React.FC = () => {
         <div className="relative mb-32">
            <div className="bg-fdd-dark-surface w-full md:w-3/4 ml-auto p-12 md:p-24 relative z-0">
               <div className="md:w-2/3 ml-auto">
-                <h3 className="font-sohne font-bold text-3xl text-fdd-dark-text-primary mb-6">Meet the Founder</h3>
-                <p className="text-fdd-dark-text-secondary font-graphik font-light leading-relaxed mb-8 italic text-lg">
-                  Ms Frances began her journey in design under her father's guidance in Abuja, working in his interior decoration business from 2012 to 2018. In those years, she discovered how attention to detail and thoughtful execution transform ideas into spaces people connect with. After moving to Anambra, she launched a cleaning agency, learning realities of running a business, managing teams, and delivering consistent quality; lessons that now inform every project she takes on.
+                <h3 className="font-serif text-3xl text-fdd-dark-text-primary mb-6">Meet the Principal</h3>
+                <p className="text-fdd-dark-text-secondary font-light leading-relaxed mb-8 italic text-lg">
+                  The vision for FDD was born in 2020 after Ms Frances attended a Kingdom Economic Summit at Love Ambassadors Ministries, Awka — a moment that became a personal calling to create refined, intentional spaces.
 
-                  Building on these experiences, Frances went on to study and gain a diploma in interior design, followed by a BSc in building technology, deepening both her creative and technical expertise. She then combined this knowledge with her years of hands-on experience to establish FDD, a luxury and premium interior design brand. She received award for Best Female Entrepreneur in Southeast Nigeria in 2021. She also serves as a director and leader in her church, bringing purpose, precision, and care to every space. As founder and principal designer of FDD, Frances transforms interiors into experiences that blend elegance, functionality, and lasting impact.
+                  With over five years managing her father’s export business (2012 - 2018) and later running her own cleaning agency, she built strong operational and client experience, also learnt a lot about marketing and bookkeeping before fully stepping into premium interior design.
                 </p>
                 <div className="flex items-center gap-4">
                    <div className="h-[1px] w-12 bg-fdd-accent-primary"></div>
                    <div>
-                     <span className="block font-sohne font-bold text-fdd-dark-text-primary uppercase tracking-widest text-sm">Ms Frances</span>
-                     <span className="block font-graphik text-fdd-dark-text-secondary text-xs mt-1">Founder & Principal Designer</span>
+                     <span className="block font-bold text-fdd-dark-text-primary uppercase tracking-widest text-sm">Ms Frances</span>
+                     <span className="block text-fdd-dark-text-secondary text-xs mt-1">Founder & Principal Designer</span>
                    </div>
                 </div>
               </div>
@@ -76,7 +76,7 @@ const About: React.FC = () => {
            >
               <img 
                 src={principalImg} 
-                alt="Ms Frances Oluebube, Founder, FDD" 
+                alt="Chidimma Nwosu - Lead Designer" 
                 className="w-full h-full object-cover shadow-2xl grayscale hover:grayscale-0 transition-all duration-700"
               />
            </motion.div>
@@ -85,27 +85,13 @@ const About: React.FC = () => {
            <div className="md:hidden mt-8">
               <img 
                 src={principalImg} 
-                alt="Ms Frances Oluebube, Founder, FDD" 
+                alt="Chidimma Nwosu - Lead Designer" 
                 className="w-full aspect-square object-cover shadow-lg grayscale"
               />
            </div>
         </div>
 
         {/* Values Grid */}
-        <div className="mb-16">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center max-w-4xl mx-auto"
-          >
-            <p className="text-fdd-dark-text-secondary font-graphik font-light text-lg leading-relaxed italic">
-              At FDD, every project is treated as a personal commitment, designed to reflect the client's unique personality and lifestyle. By managing every detail—from space planning, 2D/3D visualization, material sourcing—clients can trust that their vision is fully realized without constant oversight or worry. Through careful research and intentional planning, FDD ensures that each space is not only beautiful but seamless, delivering peace of mind and a truly tailored experience.
-            </p>
-          </motion.div>
-        </div>
-
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 border-t border-stone-200 pt-16">
           {values.map((item, idx) => (
              <motion.div 
@@ -118,9 +104,9 @@ const About: React.FC = () => {
                transition={{ delay: idx * 0.08, duration: 0.45 }}
                className="hover:shadow-lg"
              >
-                <span className="text-fdd-light-text-secondary dark:text-fdd-dark-text-secondary text-5xl font-serif mb-6 block opacity-50">0{idx + 1}</span>
-                <h4 className="text-fdd-light-text-primary dark:text-fdd-dark-text-primary font-serif font-bold text-xl mb-2 leading-tight">{item.title}</h4>
-                <p className="text-fdd-light-text-secondary dark:text-fdd-dark-text-secondary font-light text-sm leading-relaxed pr-4">{item.text}</p>
+                <span className="text-fdd-dark-text-secondary text-5xl font-serif mb-6 block opacity-50">0{idx + 1}</span>
+                <h4 className="text-fdd-dark-text-primary font-serif font-bold text-xl mb-2 leading-tight">{item.title}</h4>
+                <p className="text-fdd-dark-text-secondary font-light text-sm leading-relaxed pr-4">{item.text}</p>
              </motion.div>
           ))}
         </div>
